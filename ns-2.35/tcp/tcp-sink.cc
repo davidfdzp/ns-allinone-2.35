@@ -181,6 +181,8 @@ TcpSink::TcpSink(Acker* acker) : Agent(PT_ACK), acker_(acker), save_(NULL),
 {
 	bytes_ = 0; 
 	bind("bytes_", &bytes_);
+	bind("ack_prio_", &ack_prio_);
+	bind("set_prio_",&set_prio_);
 
 	/*
 	 * maxSackBlocks_ does wierd tracing things.
@@ -199,6 +201,8 @@ TcpSink::delay_bind_init_all()
         delay_bind_init_one("ts_echo_bugfix_");
 	delay_bind_init_one("ts_echo_rfc1323_");
 	delay_bind_init_one("bytes_"); // For throughput measurements in JOBS
+	delay_bind_init_one("set_prio_");
+	delay_bind_init_one("ack_prio_");
         delay_bind_init_one("generateDSacks_"); // used only by sack
 	delay_bind_init_one("qs_enabled_");
 	delay_bind_init_one("RFC2581_immediate_ack_");
@@ -345,8 +349,15 @@ void TcpSink::ack(Packet* opkt)
         acker_->last_ack_sent_ = ntcp->seqno();
         // printf("ACK %d ts %f\n", ntcp->seqno(), ntcp->ts_echo());
 	
-	send(npkt, 0);
-	// send it
+	// Check whether to set the ack prio to something
+	if(set_prio_){
+		nip->prio() = ack_prio_;
+		// printf("ACK prio %d\n", ack_prio_);
+		send(npkt, 0);
+	}else{
+		send(npkt, 0);
+		// send it
+	}
 }
 
 void TcpSink::add_to_ack(Packet*)

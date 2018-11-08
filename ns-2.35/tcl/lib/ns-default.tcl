@@ -1063,6 +1063,10 @@ Agent/TCPSink set SYN_immediate_ack_ true ; # Added 2010/02/02
 Agent/TCPSink set bytes_ 0
 Agent/TCPSink set ecn_syn_ false ;	# Added 2005/11/21 for SYN/ACK pkts.
 
+# Added for ACK prioritization
+Agent/TCPSink set set_prio_ 0
+Agent/TCPSink set ack_prio_ 0
+
 Agent/TCPSink/DelAck set interval_ 100ms
 catch {
 	Agent/TCPSink/Asym set interval_ 100ms

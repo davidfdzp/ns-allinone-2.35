@@ -19676,6 +19676,9 @@ Agent/TCPSink set SYN_immediate_ack_ true ; # Added 2010/02/02\n\
 Agent/TCPSink set bytes_ 0\n\
 Agent/TCPSink set ecn_syn_ false ;	# Added 2005/11/21 for SYN/ACK pkts.\n\
 \n\
+Agent/TCPSink set set_prio_ 0\n\
+Agent/TCPSink set ack_prio_ 0\n\
+\n\
 Agent/TCPSink/DelAck set interval_ 100ms\n\
 catch {\n\
 Agent/TCPSink/Asym set interval_ 100ms\n\
@@ -22683,538 +22686,87 @@ set ns [Simulator instance]\n\
 return [format \"%.6f\" [$ns now]]\n\
 }\n\
 \n\
-Phy/TdmaDama set bdrop_rate_ -1\n\
 \n\
-Allocator/MFTDMA set active_node_ 0\n\
-Allocator/MFTDMA set bytes_superframe_ 0\n\
-Allocator/MFTDMA set hub_ 0\n\
-Allocator/MFTDMA set load_ 0.0\n\
-Allocator/MFTDMA set atm_count_ 0\n\
-Allocator/MFTDMA set slot_count_ 0\n\
-Allocator/MFTDMA set f_count_ 0\n\
-Allocator/MFTDMA set layout_ 0\n\
-Allocator/MFTDMA set mode_ 0\n\
-Allocator/MFTDMA set forget_debit_ 1\n\
-Allocator/MFTDMA set debug_ 0\n\
-Allocator/MFTDMA set utilization_ 0.0\n\
-Allocator/MFTDMA set feedback_ 0\n\
-Allocator/MFTDMA set tolerance_ 0.9\n\
-Allocator/MFTDMA set utility_ 0\n\
-Allocator/MFTDMA set testing_ -1\n\
-Allocator/MFTDMA set frame_duration_ 0.0265\n\
-Allocator/MFTDMA set slot_time_ 0.0\n\
-Allocator/MFTDMA set sl_threshold_ 0\n\
-Allocator/MFTDMA set max_buf_req_ 80000\n\
-Allocator/MFTDMA set hwin_ 495\n\
-Allocator/MFTDMA set wwin_ 700\n\
-\n\
-\n\
-LL/Atm set fragsize_ 48\n\
-LL/Atm set id_ 0\n\
-LL/Atm set sent_up_ 0\n\
-LL/Atm set sent_down_ 0\n\
-\n\
-LL/Mpeg set id_ 0\n\
-LL/Mpeg set sent_up_ 0\n\
-LL/Mpeg set sent_down_ 0\n\
-LL/Mpeg set pack_thresh 0.1\n\
-LL/Mpeg set limit_ 100\n\
-\n\
-LL/Rle set sent_up_ 0\n\
-LL/Rle set sent_down_ 0\n\
-LL/Rle set alpdu_hdr_ 0\n\
-\n\
-Application/Traffic/Voice set burst_time_ 0.352\n\
-Application/Traffic/Voice set idle_time_ 0.650\n\
-Application/Traffic/Voice set interval_  0.020\n\
-Application/Traffic/Voice set packetSize_ 60\n\
-Application/Traffic/Voice set deterministic_ 0\n\
-Application/Traffic/Voice set sent_ 0\n\
-Application/Traffic/Voice set recv_ 0\n\
-Application/Traffic/Voice set delay_ 100\n\
-Application/Traffic/Voice set cur_delay_ 0\n\
-Application/Traffic/Voice set rscore_ 0\n\
-Application/Traffic/Voice set loss_ratio_ 0\n\
-Application/Traffic/Voice set loss_playout_ 0\n\
-Application/Traffic/Voice set mos_ 0\n\
-\n\
-\n\
-Mac/TdmaDama set slot_packet_len_ 1500\n\
-Mac/TdmaDama set abw_ 0\n\
-Mac/TdmaDama set dump_alloc_ 0\n\
-Mac/TdmaDama set algorithm_ 2\n\
-Mac/TdmaDama set used_slots_ 0\n\
-Mac/TdmaDama set total_slots_ 0\n\
-Mac/TdmaDama set offset_ 0\n\
-Mac/TdmaDama set hub_ 0\n\
-Mac/TdmaDama set slot_num_ 0\n\
-\n\
-Mac/Rle set slot_packet_len_ 1500\n\
-Mac/Rle set abw_ 0\n\
-Mac/Rle set dump_alloc_ 0\n\
-Mac/Rle set algorithm_ 2\n\
-Mac/Rle set used_slots_ 0\n\
-Mac/Rle set total_slots_ 0\n\
-Mac/Rle set sent_up_ 0\n\
-Mac/Rle set sent_down_ 0\n\
-Mac/Rle set offset_ 0\n\
-Mac/Rle set hub_ 0\n\
-Mac/Rle set slot_num_ 0\n\
-\n\
-Queue/DropTail/PrioFid set drop_front_ false\n\
-Queue/DropTail/PrioFid set summarystats_ false\n\
-Queue/DropTail/PrioFid set queue_in_bytes_ false\n\
-Queue/DropTail/PrioFid set mean_pktsize_ 500\n\
-\n\
-\n\
-Requester/Combiner set request_ 1\n\
-Requester/Combiner set totQSreq_ 0\n\
-Requester/Combiner set delay_ 1.0\n\
-Requester/Combiner set max_rbdc_ 100000\n\
-Requester/Combiner set min_rbdc_ 0 \n\
-Requester/Combiner set max_vbdc_ 100000\n\
-Requester/Combiner set rbdc_ 0\n\
-Requester/Combiner set vbdc_ 0\n\
-Requester/Combiner set avbdc_ 0\n\
-Requester/Combiner set alpha_ 0\n\
-Requester/Combiner set win_ 1\n\
-Requester/Combiner set req_period_ 1.0\n\
-\n\
-set eps_header {%!PS-Adobe-3.0 EPSF-3.0\n\
-%%Creator: noname\n\
-%%Title: sf_layout\n\
-%%CreationDate: nodate\n\
-%%DocumentData: Clean7Bit\n\
-%%Orientation: Landscape\n\
-%%BoundingBox: A4\n\
-%%LanguageLevel: 2\n\
-%%EndComments\n\
-/Box {\n\
-newpath 2 copy moveto\n\
-4 1 roll 2 copy exch lineto\n\
-4 1 roll 2 copy lineto\n\
-4 1 roll exch lineto\n\
-closepath pop pop stroke\n\
-} bind def \n\
-/BoxF {\n\
-newpath 2 copy moveto\n\
-4 1 roll 2 copy exch lineto\n\
-4 1 roll 2 copy lineto\n\
-4 1 roll exch lineto\n\
-closepath pop pop\n\
-setrgbcolor\n\
-fill\n\
-stroke\n\
-0.0 0.0 0.0 setrgbcolor\n\
-} bind def \n\
-/Helvetica findfont\n\
-20 scalefont\n\
-setfont \n\
-}\n\
-\n\
-proc get-random {} {\n\
-set RS [open random r]\n\
-set rnd [gets $RS]\n\
-set rnd [expr $rnd + 1]\n\
-close $RS\n\
-set RS [open random w]\n\
-puts $RS $rnd\n\
-return $rnd\n\
-}\n\
-\n\
-Simulator instproc requesterType {val} {$self set requesterType_ $val}\n\
-Simulator instproc allocatorType {val} {$self set allocatorType_ $val}\n\
-\n\
-add-packet-header MPEG ATM RleBurst Rle TdmaDama\n\
-\n\
-Allocator/MFTDMA instproc trace-sf { filedes {index_ 0}} {\n\
-$self instvar mac_ bt_\n\
-set bt_ [new BaseTrace]\n\
-$bt_ attach $filedes\n\
-$self trace-file $bt_\n\
-return $bt_	\n\
-}\n\
-\n\
-Allocator/MFTDMA instproc new-frame { car ts bs } {\n\
-\n\
-$self instvar mac_ bytes_superframe_ \n\
-$self instvar slot_count_ f_count_ mac_\n\
-$self instvar frame_duration_ slot_time_\n\
-\n\
-if { $car<1 || $car>20 } {\n\
-puts stderr \"$self new-frame: too many carriers for a single frame\"\n\
-exit \n\
-}\n\
-\n\
-if { $ts<1 || $ts>256 } {\n\
-puts stderr \"$self new-frame: too many timeslots per carrier\"\n\
-exit	\n\
-}\n\
-\n\
-set minlen [$mac_ set slot_packet_len_]\n\
-if { $bs<$minlen } {\n\
-puts stderr \"$self new-frame: burstsize smaller than $minlen bytes\"\n\
-exit	\n\
-}\n\
-\n\
-if { $bs>64000 } {\n\
-puts stderr \"$self new-frame: burstsize larger than 64kB\"\n\
-exit	\n\
-}\n\
-\n\
-$self add-new-frame $car $ts $bs\n\
-set slot_count_ [expr $slot_count_ + $car*$ts]\n\
-set bytes_superframe_ [expr $bytes_superframe_ + $car*$ts*$bs]\n\
-set slot_time_ [expr  $frame_duration_/$ts]\n\
-$self attach $mac_\n\
-\n\
-return [expr $f_count_ - 1]\n\
-}\n\
-\n\
-Allocator/MFTDMA instproc add-rule args {\n\
-\n\
-set tt [lindex $args 0]\n\
-\n\
-set mac_class [$tt info class]\n\
-\n\
-\n\
-if { $mac_class != \"Mac/TdmaDama\" && \n\
-$mac_class != \"Mac/Rle\" } {\n\
-puts \"add-rule: $tt not a Mac/TdmaDama or Mac/Rle\"\n\
-exit\n\
-}\n\
-\n\
-set args [lreplace $args 0 0]\n\
-\n\
-foreach arg $args {\n\
-\n\
-\n\
-set ll [split $arg \" \"]\n\
-set arg1 [lindex $ll 0]\n\
-set arg2 [lindex $ll 1]\n\
-\n\
-if { $arg2 == \"\" } {\n\
-$self new-rule [$tt set slot_num_] 0 $arg1\n\
-continue\n\
-}\n\
-if { $arg1 == \"NULL\" } {\n\
-$self new-rule [$tt set slot_num_] 0 $arg2\n\
-continue\n\
-}\n\
-\n\
-if { $arg1 == \"SMALL\" } {\n\
-$self new-rule [$tt set slot_num_] 1 $arg2\n\
-continue\n\
-}\n\
-}\n\
-\n\
-}\n\
-\n\
-\n\
-Allocator/MFTDMA instproc cra { mac_ter rate } {\n\
-\n\
-set mac_class [$mac_ter info class]\n\
-\n\
-if { $mac_class != \"Mac/TdmaDama\" && \n\
-$mac_class != \"Mac/Rle\" } {\n\
-puts \"cra: $tt not a Mac/TdmaDama or Mac/Rle\"\n\
-exit\n\
-}\n\
-\n\
-\n\
-$self cra_ [$mac_ter set slot_num_] $rate\n\
-\n\
-\n\
-}\n\
-\n\
-\n\
-Simulator instproc setup-geolink {ternode satnode} {\n\
-\n\
-$self instvar llType_ ifqlen_ requesterType_\n\
-$self instvar macType_ ifqType_ channelType_ phyType_ wiredRouting_\n\
-\n\
-\n\
-if { [info exists llType_] } {\n\
-set opt_ll $llType_\n\
+Tmix instproc alloc-agent {tcptype} {\n\
+if {$tcptype != \"Tahoe\"} {\n\
+return [new Agent/TCP/$tcptype]\n\
 } else {\n\
-set opt_ll LL/Atm\n\
+return [new Agent/TCP]\n\
+}\n\
 }\n\
 \n\
-if { [info exists ifqType_] } {\n\
-set opt_ifq $ifqType_\n\
+Tmix instproc alloc-sink {sinktype} {\n\
+if {$sinktype != \"default\"} {\n\
+return [new Agent/TCPSink/$sinktype]\n\
 } else {\n\
-set opt_ifq Queue/DropTail/PrioFid\n\
+return [new Agent/TCPSink]\n\
+}\n\
 }\n\
 \n\
-if { [info exists ifqlen_] } {\n\
-set opt_qlim $ifqlen_\n\
+Tmix instproc configure-sink {sink} {\n\
+$sink set packetSize_ 40\n\
+}\n\
+\n\
+Tmix instproc configure-source {agent fid wnd mss} {\n\
+$agent set fid_ $fid\n\
+$agent set window_ $wnd\n\
+$agent set packetSize_ $mss\n\
+}\n\
+\n\
+\n\
+Tmix instproc alloc-tcp {tcptype} {\n\
+if {$tcptype != \"Reno\"} {\n\
+return [new Agent/TCP/FullTcp/$tcptype]\n\
 } else {\n\
-set opt_qlim [Queue set limit_]\n\
-} \n\
-\n\
-if { [info exists macType_] } {\n\
-set opt_mac $macType_ \n\
-} else {\n\
-set opt_mac Mac/TdmaDama\n\
+return [new Agent/TCP/FullTcp]\n\
+}\n\
 }\n\
 \n\
-set opt_bw 3072000.0\n\
+Tmix instproc setup-tcp {tcp fid wnd mss} {\n\
+$tcp set fid_ $fid\n\
+$tcp set window_ $wnd\n\
+$tcp set segsize_ $mss\n\
 \n\
-if { [info exists phyType_] } {\n\
-set opt_phy $phyType_\n\
-} else {\n\
-else opt_phy Phy/TdmaDama\n\
+$tcp proc done {} \"$self done $tcp\"\n\
 }\n\
 \n\
 \n\
-if { [info exists requestType_] } {\n\
-set opt_req $requesterType_\n\
-} else {\n\
-set opt_req Requester/Combiner\n\
+Tmix instproc alloc-app {} {\n\
+return [new Application/Tmix]\n\
 }\n\
 \n\
-$ternode add-interface geo $opt_ll $opt_ifq $opt_qlim $opt_mac $opt_bw $opt_phy \n\
-$ternode attach-to-inlink [$satnode set downlink_]\n\
-$ternode attach-to-outlink [$satnode set uplink_]\n\
-$ternode install-requester $opt_req\n\
-\n\
-[$ternode set ll_(0)] set limit_ $opt_qlim\n\
-\n\
-if { $opt_ll == \"LL/Atm\" } {\n\
-[$ternode set mac_(0)] set slot_packet_len_ 53\n\
+Tmix instproc done {tcp} {\n\
+$self recycle $tcp\n\
 }\n\
 \n\
-if { $opt_ll == \"LL/Mpeg\" } {\n\
-[$ternode set mac_(0)] set slot_packet_len_ 188\n\
-}\n\
-\n\
-if { $opt_ll == \"LL/Rle\" } {\n\
-[$ternode set mac_(0)] set slot_packet_len_ 2\n\
-}\n\
-\n\
-if { ($opt_ll == \"LL/Rle\" && $opt_mac != \"Mac/Rle\") || \\\n\
-($opt_ll != \"LL/Rle\" && $opt_mac == \"Mac/Rle\") } {\n\
-\n\
-puts stderr \"setup-geolink: must be both LL/Rle and Mac/Rle\"\n\
-exit\n\
-\n\
-}\n\
-$ternode setifqueue\n\
-\n\
-}\n\
-\n\
-Node/SatNode instproc start-req {} {\n\
-$self instvar requester_\n\
-$requester_ start\n\
-}\n\
-\n\
-Node/SatNode instproc stop-req {} {\n\
-$self instvar requester_\n\
-$requester_ stop\n\
-}\n\
-\n\
-\n\
-Node/SatNode instproc setifqueue {} {\n\
-$self instvar mac_ ifq_\n\
-\n\
-$mac_(0) setmon $ifq_(0)\n\
-\n\
-}\n\
-\n\
-Node/SatNode instproc trace-inlink-queue {f {index_ 0} } {\n\
-$self instvar id_ rcvT_ mac_ ll_ phy_rx_ em_ errT_\n\
-\n\
+Tmix instproc now {} {\n\
 set ns [Simulator instance]\n\
-set toNode_ $id_\n\
-set fromNode_ -1\n\
-\n\
-if {[info exists em_($index_)]} {\n\
-set errT_($index_) [$ns create-trace Sat/Error $f $fromNode_ $toNode_]\n\
-$errT_($index_) target [$em_($index_) drop-target]\n\
-$em_($index_) drop-target $errT_($index_)\n\
-set rcvT_($index_) [$ns create-trace Sat/Recv $f $fromNode_ $toNode_]\n\
-$rcvT_($index_) target [$em_($index_) target]\n\
-$em_($index_) target $rcvT_($index_)\n\
-} else {\n\
-set rcvT_($index_) [$ns create-trace Sat/Recv $f $fromNode_ $toNode_]\n\
-$rcvT_($index_) target [$mac_($index_) up-target]\n\
-$mac_($index_) up-target $rcvT_($index_)\n\
+return [format \"%.6f\" [$ns now]]\n\
 }\n\
 \n\
+Simulator instproc Tmix_DelayBox args {\n\
+$self instvar Node_\n\
+\n\
+set node [new Node/Tmix_DelayBox]\n\
+\n\
+$node create-classifier\n\
+\n\
+set Node_([$node id]) $node\n\
+$self add-node $node [$node id]\n\
+$node nodeid [$node id]\n\
+$node set ns_ $self\n\
+$self check-node-num\n\
+return $node\n\
 }\n\
 \n\
+Node/Tmix_DelayBox instproc init args {\n\
+eval $self next $args\n\
+$self instvar db_classifier_\n\
 \n\
-Node/SatNode instproc trace-outlink-queue {f {index_ 0} } {\n\
-$self instvar id_ enqT_ deqT_ drpT_ mac_ ll_ ifq_ drophead_\n\
-$self instvar linkhead_ lhT_\n\
+set db_classifier_ [new Classifier/Tmix_DelayBox]\n\
 \n\
-set ns [Simulator instance]\n\
-set fromNode_ $id_\n\
-set toNode_ -1\n\
-\n\
-set enqT_($index_) [$ns create-trace Enque $f $fromNode_ $toNode_]\n\
-$enqT_($index_) target [$ll_($index_) down-target]\n\
-$ll_($index_) down-target $enqT_($index_)\n\
-\n\
-set deqT_($index_) [$ns create-trace Deque $f $fromNode_ $toNode_]\n\
-$deqT_($index_) target [$ifq_($index_) target]\n\
-$ifq_($index_) target $deqT_($index_)\n\
-\n\
-set drpT_($index_) [$ns create-trace Drop $f $fromNode_ $toNode_]\n\
-$drpT_($index_) target [$drophead_($index_) target]\n\
-$drophead_($index_) target $drpT_($index_)\n\
-$ifq_($index_) drop-target $drophead_($index_)\n\
-\n\
-set lhT_($index_) [$ns create-trace Hop $f $fromNode_ $toNode_]\n\
-$lhT_($index_) target [$linkhead_($index_) target] \n\
-$linkhead_($index_) target $lhT_($index_)\n\
-\n\
+$self insert-entry [$self get-module Base] $db_classifier_ 0\n\
 }\n\
-\n\
-\n\
-Node/SatNode instproc init args {\n\
-eval $self next $args           ;# parent class constructor\n\
-\n\
-\n\
-$self instvar nifs_\n\
-$self instvar phy_tx_ phy_rx_ mac_ ifq_ ll_ pos_ hm_ id_ ifqType_\n\
-\n\
-set nifs_       0               ;# number of network interfaces\n\
-set ns_ [Simulator instance]\n\
-\n\
-\n\
-set trace_ [$ns_ get-ns-traceall]\n\
-if {$trace_ != \"\"} {\n\
-set dropT_ [$ns_ create-trace Sat/Drop $trace_ $self $self \"\"]\n\
-$self set_trace $dropT_\n\
-}\n\
-$self cmd set_address $id_ ; # Used to indicate satellite node in array\n\
-}\n\
-\n\
-\n\
-Node/SatNode instproc interface-errormodel { em { index 0 } } {\n\
-$self instvar mac_ ll_ em_ linkhead_\n\
-set pp [$mac_($index) up-target]\n\
-$mac_($index) up-target $em\n\
-$em target $pp\n\
-$em drop-target [new Agent/Null]; # otherwise, packet is only marked\n\
-set em_($index) $em\n\
-$linkhead_($index) seterrmodel $em\n\
-} \n\
-\n\
-Node/SatNode instproc insert-monitor { {index_ 0}} {\n\
-$self instvar qMonitor_ snoopIn_ snoopOut_ snoopDrop_\n\
-$self instvar ll_ ifq_ drophead_ bytesInt_ pktsInt_ requester_\n\
-$self instvar snoopIP_\n\
-\n\
-$self instvar linkhead_\n\
-\n\
-set snoopIn_($index_)   [new SnoopQueue/In]\n\
-set snoopOut_($index_)  [new SnoopQueue/Out]\n\
-set snoopDrop_($index_) [new SnoopQueue/Drop]\n\
-\n\
-$snoopIn_($index_) target [$ll_($index_) down-target]	\n\
-$ll_($index_) down-target $snoopIn_($index_)\n\
-\n\
-$snoopOut_($index_) target [$ifq_($index_) target]\n\
-$ifq_($index_) target $snoopOut_($index_)\n\
-\n\
-$snoopDrop_($index_) target [$drophead_($index_) target]\n\
-$drophead_($index_) target $snoopDrop_($index_)\n\
-$ifq_($index_) drop-target $snoopDrop_($index_)\n\
-\n\
-set bytesInt_($index_) [new Integrator]\n\
-$qMonitor_($index_) set-bytes-integrator $bytesInt_($index_)\n\
-\n\
-set pktsInt_($index_) [new Integrator]\n\
-$qMonitor_($index_) set-pkts-integrator $pktsInt_($index_)\n\
-\n\
-$requester_ set qMonitor_ $qMonitor_($index_)\n\
-\n\
-$snoopIn_($index_) set-monitor $qMonitor_($index_)\n\
-$snoopOut_($index_) set-monitor $qMonitor_($index_)\n\
-$snoopDrop_($index_) set-monitor $qMonitor_($index_)\n\
-\n\
-} \n\
-\n\
-Simulator instproc satRequester {type_} {\n\
-$self set satRequester_ $type_\n\
-return $type_\n\
-}\n\
-\n\
-Simulator instproc satAllocator {type_} {\n\
-$self set satAllocator_ $type_\n\
-return $type_\n\
-}\n\
-\n\
-Simulator instproc satPositionLat {type_} {\n\
-$self set satPositionLat_ $type_\n\
-return $type_\n\
-}\n\
-\n\
-Simulator instproc satPositionLon {type_} {\n\
-$self set satPositionLon_ $type_\n\
-return $type_\n\
-}\n\
-\n\
-\n\
-Node/SatNode instproc install-requester { type {index_ 0} } {\n\
-$self instvar mac_ ifq_ qMonitor_ requester_ id_ ll_\n\
-\n\
-set qMonitor_($index_) [new QueueMonitor]	\n\
-if {[info exist mac_($index_)]} {\n\
-\n\
-set requester_ [new $type]\n\
-$requester_ attach $mac_($index_)\n\
-$requester_ setifq $ifq_($index_)\n\
-$requester_ set ifq_ $ifq_($index_)\n\
-$requester_ set id_ $id_\n\
-$requester_ set node_ $self\n\
-$self insert-monitor $index_\n\
-\n\
-$requester_ setmon $qMonitor_($index_)\n\
-$ll_($index_) setmon $ifq_($index_) \n\
-\n\
-return $requester_\n\
-}\n\
-\n\
-}\n\
-\n\
-Node/SatNode instproc install-allocator {type {index_ 0} } {\n\
-$self instvar mac_ allocator_\n\
-if {[info exist mac_($index_)]} {\n\
-set allocator_ [new $type]\n\
-$allocator_ attach $mac_($index_)\n\
-$mac_($index_) set-allocator $allocator_\n\
-$allocator_ set hub_ [$mac_($index_) set slot_num_]\n\
-$allocator_ set mac_ $mac_($index_)\n\
-}\n\
-return $allocator_\n\
-}\n\
-\n\
-Node/SatNode instproc trace-event { filedes {index_ 0}} {\n\
-$self instvar mac_ et_ requester_ allocator_\n\
-if {[info exist mac_($index_)]} {\n\
-set et_ [new BaseTrace/Event]\n\
-$et_ attach $filedes\n\
-$mac_($index_) eventtrace $et_\n\
-$requester_ eventtrace $et_\n\
-}\n\
-return $et_	\n\
-}\n\
-\n\
-Node/SatNode instproc insert-sat-ttl { {index_ 0} } {\n\
-$self instvar ifq_ ttl_\n\
-if {[info exist ifq_($index_)] } {\n\
-set ttl_($index_) [new TTLChecker]\n\
-set tgt [$ifq_($index_) target]\n\
-$ifq_($index_) target $ttl_($index_)\n\
-$ttl_($index_) target $tgt\n\
-}\n\
-}\n\
-\n\
-\n\
-\n\
 ";
 #include "tclcl.h"
 EmbeddedTcl et_ns_lib(code);

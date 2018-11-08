@@ -126,6 +126,8 @@ protected:
 	int SYN_immediate_ack_; // Used to generate first ACK immediately
 	int bytes_;  	// for JOBS
 					// for RFC2581-compliant gap-filling.
+	int set_prio_;
+	int ack_prio_;
 	double lastreset_; 	/* W.N. used for detecting packets  */
 				/* from previous incarnations */
         int ecn_syn_;           /* allow SYN/ACK packets to be ECN-capable */
