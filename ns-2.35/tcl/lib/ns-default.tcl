@@ -1066,6 +1066,8 @@ Agent/TCPSink set ecn_syn_ false ;	# Added 2005/11/21 for SYN/ACK pkts.
 # Added for ACK prioritization
 Agent/TCPSink set set_prio_ 0
 Agent/TCPSink set ack_prio_ 0
+Agent/TCPSink set set_fid_ 0
+Agent/TCPSink set ack_fid_ 0
 
 Agent/TCPSink/DelAck set interval_ 100ms
 catch {

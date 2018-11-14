@@ -183,6 +183,8 @@ TcpSink::TcpSink(Acker* acker) : Agent(PT_ACK), acker_(acker), save_(NULL),
 	bind("bytes_", &bytes_);
 	bind("ack_prio_", &ack_prio_);
 	bind("set_prio_",&set_prio_);
+	bind("ack_fid_", &ack_fid_);
+	bind("set_fid_",&set_fid_);
 
 	/*
 	 * maxSackBlocks_ does wierd tracing things.
@@ -203,6 +205,8 @@ TcpSink::delay_bind_init_all()
 	delay_bind_init_one("bytes_"); // For throughput measurements in JOBS
 	delay_bind_init_one("set_prio_");
 	delay_bind_init_one("ack_prio_");
+	delay_bind_init_one("set_fid_");
+		delay_bind_init_one("ack_fid_");
         delay_bind_init_one("generateDSacks_"); // used only by sack
 	delay_bind_init_one("qs_enabled_");
 	delay_bind_init_one("RFC2581_immediate_ack_");
@@ -309,8 +313,11 @@ void TcpSink::ack(Packet* opkt)
 	hdr_ip* oip = hdr_ip::access(opkt);
 	hdr_ip* nip = hdr_ip::access(npkt);
 	// get the ip headers
-	nip->flowid() = oip->flowid();
-	// copy the flow id
+	if(set_fid_){
+		nip->flowid() = ack_fid_;
+	}else{ // copy the flow id
+		nip->flowid() = oip->flowid();
+	}
 	
 	hdr_flags* of = hdr_flags::access(opkt);
 	hdr_flags* nf = hdr_flags::access(npkt);

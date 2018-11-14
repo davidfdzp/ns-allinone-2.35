@@ -586,9 +586,9 @@ s,@AS@,|#_!!_#|as,g
 s,@OBJDUMP@,|#_!!_#|objdump,g
 s,@CPP@,|#_!!_#|gcc -E,g
 s,@CXXCPP@,|#_!!_#|g++ -E,g
-s,@F77@,|#_!!_#|,g
-s,@FFLAGS@,|#_!!_#|,g
-s,@ac_ct_F77@,|#_!!_#|,g
+s,@F77@,|#_!!_#|f77,g
+s,@FFLAGS@,|#_!!_#|-g -O2,g
+s,@ac_ct_F77@,|#_!!_#|f77,g
 s,@LIBTOOL@,|#_!!_#|$(SHELL) $(top_builddir)/libtool,g
 s,@NS_ALLINONE_DISTCHECK_CONFIGURE_FLAGS@,|#_!!_#|--with-ns-allinone=/home/dfernandezp/ns-allinone-2.35,g
 s,@NS_CPPFLAGS@,|#_!!_#|-I/home/dfernandezp/ns-allinone-2.35/include -I/home/dfernandezp/ns-allinone-2.35/ns-2.35 -I/home/dfernandezp/ns-allinone-2.35/tclcl-1.20 -I/home/dfernandezp/ns-allinone-2.35/otcl-1.14  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/propagation  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/pcap  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/tcp  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/sctp  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/common  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/link  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/queue  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/trace  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/adc  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/apps  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/routing  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/tools  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mcast  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib/main  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib/nr  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/ns  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/filter_core  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/asim,g

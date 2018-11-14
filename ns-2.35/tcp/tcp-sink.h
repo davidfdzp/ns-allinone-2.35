@@ -128,6 +128,8 @@ protected:
 					// for RFC2581-compliant gap-filling.
 	int set_prio_;
 	int ack_prio_;
+	int set_fid_;
+	int ack_fid_;
 	double lastreset_; 	/* W.N. used for detecting packets  */
 				/* from previous incarnations */
         int ecn_syn_;           /* allow SYN/ACK packets to be ECN-capable */
