@@ -52,6 +52,8 @@ Now, all you need to do is type "./install" under this directory. The install
 script will compile and install the whole package for you. The script also
 will tell you the final installation result.
 
+Add paths to .bash_aliases file or .bashrc
+
 4. More information
 --------------------
 
