@@ -38,10 +38,19 @@ Features in this version include:
 3. Installing the package
 --------------------------
 
-All you need to do is type "./install" under this directory. The install
+tar zxfv ns-allinone-2.35.tar.gz 
+cd ns-allinone-2.35/
+./install
+Fail miserably
+git init
+git remote add origin https://github.com/davidfdzp/ns-allinone-2.35.git
+git fetch origin
+git clean -d -fx
+git checkout --track origin/master
+
+Now, all you need to do is type "./install" under this directory. The install
 script will compile and install the whole package for you. The script also
 will tell you the final installation result.
-
 
 4. More information
 --------------------
