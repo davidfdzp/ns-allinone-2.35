@@ -37,7 +37,7 @@ Features in this version include:
 
 3. Installing the package
 --------------------------
-
+sudo apt install build-essential autoconf automake libxmu-dev
 tar zxfv ns-allinone-2.35.tar.gz 
 cd ns-allinone-2.35/
 ./install
