@@ -37,11 +37,11 @@
 BLANK	= # make a blank space.  DO NOT add anything to this line
 
 # The following will be redefined under Windows (see WIN32 lable below)
-CC	= gcc
-CPP	= g++
+CC	= gcc-5
+CPP	= g++-5
 LINK	= $(CPP)
 MKDEP	= ./conf/mkdep
-TCLSH	= /home/dfernandezp/ns-allinone-2.35/bin/tclsh8.5
+TCLSH	= /home/david/ns-allinone-2.35/bin/tclsh8.5
 TCL2C	= ./tcl2c++
 AR	= ar rc $(BLANK)
 
@@ -53,7 +53,7 @@ RM	= rm -f
 PERL	= perl
 
 
-CCOPT	=  -Wall -Wno-write-strings -Wno-parentheses
+CCOPT	= 
 STATIC	= 
 LDFLAGS	= $(STATIC)
 LDOUT	= -o $(BLANK)
@@ -61,10 +61,10 @@ LDOUT	= -o $(BLANK)
 DEFINE	= -DNO_TK  -DNDEBUG -DUSE_SHM -DHAVE_UNISTD_H=1 -DHAVE_ZLIB_H -DHAVE_LIBOTCL1_14 -DHAVE_OTCL_H -DHAVE_LIBTK8_5 -DHAVE_TK_H -DHAVE_LIBTCL8_5 -DHAVE_TCLINT_H -DHAVE_TCL_H  -DHAVE_CONFIG_H
 
 INCLUDES = \
-	-I. -I/usr/include -I/home/dfernandezp/ns-allinone-2.35/otcl-1.14 -I/home/dfernandezp/ns-allinone-2.35/include -I/home/dfernandezp/ns-allinone-2.35/include -I/home/dfernandezp/ns-allinone-2.35/include
+	-I. -I/usr/include -I/home/david/ns-allinone-2.35/otcl-1.14 -I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/include
 
 LIB	= \
-	-L/home/dfernandezp/ns-allinone-2.35/otcl-1.14 -lotcl -L/home/dfernandezp/ns-allinone-2.35/lib -ltk8.5 -L/home/dfernandezp/ns-allinone-2.35/lib -ltcl8.5
+	-L/home/david/ns-allinone-2.35/otcl-1.14 -lotcl -L/home/david/ns-allinone-2.35/lib -ltk8.5 -L/home/david/ns-allinone-2.35/lib -ltcl8.5
 
 CFLAGS	= $(CCOPT) $(DEFINE)
 
