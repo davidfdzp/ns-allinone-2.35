@@ -33,12 +33,12 @@ MANDEST	= /usr/local/man
 BLANK	= # make a blank space.  DO NOT add anything to this line
 
 # The following will be redefined under Windows (see WIN32 lable below)
-CC	= gcc
-CPP	= g++
+CC	= gcc-5
+CPP	= g++-5
 LINK	= $(CPP)
-LINK_SHLIB = gcc -shared
+LINK_SHLIB = gcc-5 -shared
 MKDEP	= ./conf/mkdep
-TCLSH	= /home/dfernandezp/ns-allinone-2.35/bin/tclsh8.5
+TCLSH	= /home/david/ns-allinone-2.35-git/bin/tclsh8.5
 TCL2C	= ../tclcl-1.20/tcl2c++
 AR	= ar rc $(BLANK)
 
@@ -53,7 +53,7 @@ PERL	= /usr/bin/perl
 # for diffusion
 #DIFF_INCLUDES = "./diffusion3/main ./diffusion3/lib ./diffusion3/nr ./diffusion3/ns"
 
-CCOPT	=  -Wall -Wno-write-strings 
+CCOPT	=  
 STATIC	= 
 #LDFLAGS	= $(STATIC)
 LDFLAGS	=  -Wl,-export-dynamic 
@@ -64,7 +64,7 @@ DEFINE	= -DTCP_DELAY_BIND_ALL -DNO_TK -DTCLCL_CLASSINSTVAR  -DNDEBUG -DLINUX_TCP
 INCLUDES = \
 	-I.  \
 	-I. \
-	-I/home/dfernandezp/ns-allinone-2.35/tclcl-1.20 -I/home/dfernandezp/ns-allinone-2.35/otcl-1.14 -I/home/dfernandezp/ns-allinone-2.35/include -I/home/dfernandezp/ns-allinone-2.35/include -I/home/dfernandezp/ns-allinone-2.35/include -I/usr/include/pcap \
+	-I/home/david/ns-allinone-2.35-git/tclcl-1.20 -I/home/david/ns-allinone-2.35-git/otcl-1.14 -I/home/david/ns-allinone-2.35-git/include -I/home/david/ns-allinone-2.35-git/include -I/home/david/ns-allinone-2.35-git/include -I/usr/include/pcap \
 	-I./tcp -I./sctp -I./common -I./link -I./queue \
 	-I./adc -I./apps -I./mac -I./mobile -I./trace \
 	-I./routing -I./tools -I./classifier -I./mcast \
@@ -76,7 +76,7 @@ INCLUDES = \
 
 
 LIB	= \
-	-L/home/dfernandezp/ns-allinone-2.35/tclcl-1.20 -ltclcl -L/home/dfernandezp/ns-allinone-2.35/otcl-1.14 -lotcl -L/home/dfernandezp/ns-allinone-2.35/lib -ltk8.5 -L/home/dfernandezp/ns-allinone-2.35/lib -ltcl8.5 \
+	-L/home/david/ns-allinone-2.35-git/tclcl-1.20 -ltclcl -L/home/david/ns-allinone-2.35-git/otcl-1.14 -lotcl -L/home/david/ns-allinone-2.35-git/lib -ltk8.5 -L/home/david/ns-allinone-2.35-git/lib -ltcl8.5 \
 	-lXext -lX11 \
 	 -lnsl -ldl \
 	-lm -lm 

@@ -51,11 +51,11 @@ prefix  = /usr/local
 # Pathname of directory to install the binary
 BINDEST = /usr/local/bin
 
-CC = g++
-INCLUDE = -I. -I/home/dfernandezp/ns-allinone-2.35/tclcl-1.20 -I/home/dfernandezp/ns-allinone-2.35/otcl-1.14 -I/home/dfernandezp/ns-allinone-2.35/include -I/home/dfernandezp/ns-allinone-2.35/include -I/home/dfernandezp/ns-allinone-2.35/include -I/usr/include/pcap
-CFLAGS =  -Wall -Wno-write-strings -DCPP_NAMESPACE=std
+CC = g++-5
+INCLUDE = -I. -I/home/david/ns-allinone-2.35-git/tclcl-1.20 -I/home/david/ns-allinone-2.35-git/otcl-1.14 -I/home/david/ns-allinone-2.35-git/include -I/home/david/ns-allinone-2.35-git/include -I/home/david/ns-allinone-2.35-git/include -I/usr/include/pcap
+CFLAGS =  -DCPP_NAMESPACE=std
 LDFLAGS = 
-LIBS = -L/home/dfernandezp/ns-allinone-2.35/lib -ltcl8.5  -lnsl -ldl -lm 
+LIBS = -L/home/david/ns-allinone-2.35-git/lib -ltcl8.5  -lnsl -ldl -lm 
 INSTALL = /usr/bin/install -c
 
 SRC = proxytrace.cc formsquid.cc formtxt.cc my-endian.cc \
