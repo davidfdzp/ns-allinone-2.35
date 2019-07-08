@@ -32,4 +32,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/david/ns-allinone-2.35-git/lib'
+libdir='/home/david/ns-allinone-2.35/lib'

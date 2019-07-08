@@ -44,11 +44,11 @@ TCL_LIBS='-ldl  -lm'
 
 # Top-level directory in which Tcl's platform-independent files are
 # installed.
-TCL_PREFIX='/home/david/ns-allinone-2.35-git'
+TCL_PREFIX='/home/david/ns-allinone-2.35'
 
 # Top-level directory in which Tcl's platform-specific files (e.g.
 # executables) are installed.
-TCL_EXEC_PREFIX='/home/david/ns-allinone-2.35-git'
+TCL_EXEC_PREFIX='/home/david/ns-allinone-2.35'
 
 # Flags to pass to cc when compiling the components of a shared library:
 TCL_SHLIB_CFLAGS='-fPIC'
@@ -100,15 +100,15 @@ TCL_LIB_FLAG='-ltcl8.5'
 
 # String to pass to linker to pick up the Tcl library from its
 # build directory.
-TCL_BUILD_LIB_SPEC='-L/home/david/ns-allinone-2.35-git/tcl8.5.10/unix -ltcl8.5'
+TCL_BUILD_LIB_SPEC='-L/home/david/ns-allinone-2.35/tcl8.5.10/unix -ltcl8.5'
 
 # String to pass to linker to pick up the Tcl library from its
 # installed directory.
-TCL_LIB_SPEC='-L/home/david/ns-allinone-2.35-git/lib -ltcl8.5'
+TCL_LIB_SPEC='-L/home/david/ns-allinone-2.35/lib -ltcl8.5'
 
 # String to pass to the compiler so that an extension can
 # find installed Tcl headers.
-TCL_INCLUDE_SPEC='-I/home/david/ns-allinone-2.35-git/include'
+TCL_INCLUDE_SPEC='-I/home/david/ns-allinone-2.35/include'
 
 # Indicates whether a version numbers should be used in -l switches
 # ("ok" means it's safe to use switches like -ltcl7.5;  "nodots" means
@@ -135,12 +135,12 @@ TCL_UNSHARED_LIB_SUFFIX='${VERSION}.a'
 # different place than the directory containing the source files, this
 # points to the location of the sources, not the location where Tcl was
 # compiled.
-TCL_SRC_DIR='/home/david/ns-allinone-2.35-git/tcl8.5.10'
+TCL_SRC_DIR='/home/david/ns-allinone-2.35/tcl8.5.10'
 
 # List of standard directories in which to look for packages during
 # "package require" commands.  Contains the "prefix" directory plus also
 # the "exec_prefix" directory, if it is different.
-TCL_PACKAGE_PATH='/home/david/ns-allinone-2.35-git/lib '
+TCL_PACKAGE_PATH='/home/david/ns-allinone-2.35/lib '
 
 # Tcl supports stub.
 TCL_SUPPORTS_STUBS=1
@@ -153,17 +153,17 @@ TCL_STUB_LIB_FLAG='-ltclstub8.5'
 
 # String to pass to linker to pick up the Tcl stub library from its
 # build directory.
-TCL_BUILD_STUB_LIB_SPEC='-L/home/david/ns-allinone-2.35-git/tcl8.5.10/unix -ltclstub8.5'
+TCL_BUILD_STUB_LIB_SPEC='-L/home/david/ns-allinone-2.35/tcl8.5.10/unix -ltclstub8.5'
 
 # String to pass to linker to pick up the Tcl stub library from its
 # installed directory.
-TCL_STUB_LIB_SPEC='-L/home/david/ns-allinone-2.35-git/lib -ltclstub8.5'
+TCL_STUB_LIB_SPEC='-L/home/david/ns-allinone-2.35/lib -ltclstub8.5'
 
 # Path to the Tcl stub library in the build directory.
-TCL_BUILD_STUB_LIB_PATH='/home/david/ns-allinone-2.35-git/tcl8.5.10/unix/libtclstub8.5.a'
+TCL_BUILD_STUB_LIB_PATH='/home/david/ns-allinone-2.35/tcl8.5.10/unix/libtclstub8.5.a'
 
 # Path to the Tcl stub library in the install directory.
-TCL_STUB_LIB_PATH='/home/david/ns-allinone-2.35-git/lib/libtclstub8.5.a'
+TCL_STUB_LIB_PATH='/home/david/ns-allinone-2.35/lib/libtclstub8.5.a'
 
 # Flag, 1: we built Tcl with threads enables, 0 we didn't
 TCL_THREADS=0

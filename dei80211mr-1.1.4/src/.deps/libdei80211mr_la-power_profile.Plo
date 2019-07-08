@@ -1,6 +1,6 @@
 libdei80211mr_la-power_profile.lo: power_profile.cc \
  /usr/include/stdc-predef.h power_profile.h \
- /home/david/ns-allinone-2.35-git/tclcl-1.20/tclcl.h \
+ /home/david/ns-allinone-2.35/tclcl-1.20/tclcl.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -38,7 +38,7 @@ libdei80211mr_la-power_profile.lo: power_profile.cc \
  /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /home/david/ns-allinone-2.35-git/include/tcl.h /usr/include/stdio.h \
+ /home/david/ns-allinone-2.35/include/tcl.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/libio.h \
@@ -49,14 +49,14 @@ libdei80211mr_la-power_profile.lo: power_profile.cc \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/david/ns-allinone-2.35-git/include/tclDecls.h \
- /home/david/ns-allinone-2.35-git/include/tclPlatDecls.h \
- /home/david/ns-allinone-2.35-git/otcl-1.14/otcl.h \
- /home/david/ns-allinone-2.35-git/tclcl-1.20/tclcl-config.h \
- /home/david/ns-allinone-2.35-git/tclcl-1.20/tracedvar.h \
- /home/david/ns-allinone-2.35-git/tclcl-1.20/tclcl-mappings.h \
- /home/david/ns-allinone-2.35-git/ns-2.35/common/scheduler.h \
- /home/david/ns-allinone-2.35-git/ns-2.35/config.h /usr/include/stdlib.h \
+ /home/david/ns-allinone-2.35/include/tclDecls.h \
+ /home/david/ns-allinone-2.35/include/tclPlatDecls.h \
+ /home/david/ns-allinone-2.35/otcl-1.14/otcl.h \
+ /home/david/ns-allinone-2.35/tclcl-1.20/tclcl-config.h \
+ /home/david/ns-allinone-2.35/tclcl-1.20/tracedvar.h \
+ /home/david/ns-allinone-2.35/tclcl-1.20/tclcl-mappings.h \
+ /home/david/ns-allinone-2.35/ns-2.35/common/scheduler.h \
+ /home/david/ns-allinone-2.35/ns-2.35/config.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
@@ -64,8 +64,8 @@ libdei80211mr_la-power_profile.lo: power_profile.cc \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
- /home/david/ns-allinone-2.35-git/ns-2.35/autoconf.h \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /home/david/ns-allinone-2.35/ns-2.35/autoconf.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
@@ -85,14 +85,13 @@ libdei80211mr_la-power_profile.lo: power_profile.cc \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/socket2.h \
  /usr/include/x86_64-linux-gnu/bits/in.h \
- /home/david/ns-allinone-2.35-git/ns-2.35/common/heap.h \
- /usr/include/assert.h
+ /home/david/ns-allinone-2.35/ns-2.35/common/heap.h /usr/include/assert.h
 
 /usr/include/stdc-predef.h:
 
 power_profile.h:
 
-/home/david/ns-allinone-2.35-git/tclcl-1.20/tclcl.h:
+/home/david/ns-allinone-2.35/tclcl-1.20/tclcl.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -172,7 +171,7 @@ power_profile.h:
 
 /usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
-/home/david/ns-allinone-2.35-git/include/tcl.h:
+/home/david/ns-allinone-2.35/include/tcl.h:
 
 /usr/include/stdio.h:
 
@@ -196,21 +195,21 @@ power_profile.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
-/home/david/ns-allinone-2.35-git/include/tclDecls.h:
+/home/david/ns-allinone-2.35/include/tclDecls.h:
 
-/home/david/ns-allinone-2.35-git/include/tclPlatDecls.h:
+/home/david/ns-allinone-2.35/include/tclPlatDecls.h:
 
-/home/david/ns-allinone-2.35-git/otcl-1.14/otcl.h:
+/home/david/ns-allinone-2.35/otcl-1.14/otcl.h:
 
-/home/david/ns-allinone-2.35-git/tclcl-1.20/tclcl-config.h:
+/home/david/ns-allinone-2.35/tclcl-1.20/tclcl-config.h:
 
-/home/david/ns-allinone-2.35-git/tclcl-1.20/tracedvar.h:
+/home/david/ns-allinone-2.35/tclcl-1.20/tracedvar.h:
 
-/home/david/ns-allinone-2.35-git/tclcl-1.20/tclcl-mappings.h:
+/home/david/ns-allinone-2.35/tclcl-1.20/tclcl-mappings.h:
 
-/home/david/ns-allinone-2.35-git/ns-2.35/common/scheduler.h:
+/home/david/ns-allinone-2.35/ns-2.35/common/scheduler.h:
 
-/home/david/ns-allinone-2.35-git/ns-2.35/config.h:
+/home/david/ns-allinone-2.35/ns-2.35/config.h:
 
 /usr/include/stdlib.h:
 
@@ -230,7 +229,7 @@ power_profile.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
-/home/david/ns-allinone-2.35-git/ns-2.35/autoconf.h:
+/home/david/ns-allinone-2.35/ns-2.35/autoconf.h:
 
 /usr/include/unistd.h:
 
@@ -276,6 +275,6 @@ power_profile.h:
 
 /usr/include/x86_64-linux-gnu/bits/in.h:
 
-/home/david/ns-allinone-2.35-git/ns-2.35/common/heap.h:
+/home/david/ns-allinone-2.35/ns-2.35/common/heap.h:
 
 /usr/include/assert.h:

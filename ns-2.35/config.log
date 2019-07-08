@@ -27,7 +27,7 @@ uname -v = #648-Microsoft Tue Mar 05 18:57:00 PST 2019
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /home/david/ns-allinone-2.35-git/bin
+PATH: /home/david/ns-allinone-2.35/bin
 PATH: /usr/local/sbin
 PATH: /usr/local/bin
 PATH: /usr/sbin
@@ -817,8 +817,8 @@ configure:7959: $? = 0
 configure:7959: result: yes
 configure:7959: checking for fesetprecision
 configure:7959: gcc-5 -o conftest -g -O2   conftest.c -lm  >&5
-/tmp/ccnk09nH.o: In function `main':
-/home/david/ns-allinone-2.35-git/ns-2.35/conftest.c:83: undefined reference to `fesetprecision'
+/tmp/ccaWv6FK.o: In function `main':
+/home/david/ns-allinone-2.35/ns-2.35/conftest.c:83: undefined reference to `fesetprecision'
 collect2: error: ld returned 1 exit status
 configure:7959: $? = 1
 configure: failed program was:
@@ -1919,8 +1919,8 @@ configure:8897: $? = 0
 configure:8901: result: found
 configure:8915: checking for addr2ascii
 configure:8915: gcc-5 -o conftest -g -O2   -Wl,-export-dynamic conftest.c -lm  >&5
-/tmp/ccF4jkMp.o: In function `main':
-/home/david/ns-allinone-2.35-git/ns-2.35/conftest.c:94: undefined reference to `addr2ascii'
+/tmp/ccwuczs5.o: In function `main':
+/home/david/ns-allinone-2.35/ns-2.35/conftest.c:94: undefined reference to `addr2ascii'
 collect2: error: ld returned 1 exit status
 configure:8915: $? = 1
 configure: failed program was:
@@ -2148,6 +2148,7 @@ config.status:926: creating indep-utils/webtrace-conv/nlanr/Makefile
 config.status:926: creating indep-utils/webtrace-conv/epa/Makefile
 config.status:926: creating indep-utils/cmu-scen-gen/setdest/Makefile
 config.status:926: creating autoconf.h
+config.status:1101: autoconf.h is unchanged
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -2297,16 +2298,16 @@ V_DEFINE='-DTCLCL_CLASSINSTVAR  -DNDEBUG -DLINUX_TCP_HEADER -DUSE_SHM'
 V_DEFINES='-DHAVE_LIBTCLCL -DHAVE_TCLCL_H -DHAVE_LIBOTCL1_14 -DHAVE_OTCL_H -DHAVE_LIBTK8_5 -DHAVE_TK_H -DHAVE_LIBTCL8_5 -DHAVE_TCLINT_H -DHAVE_TCL_H '
 V_IMPORT_LIBS=''
 V_INCLUDE=''
-V_INCLUDES='-I/home/david/ns-allinone-2.35-git/tclcl-1.20 -I/home/david/ns-allinone-2.35-git/otcl-1.14 -I/home/david/ns-allinone-2.35-git/include -I/home/david/ns-allinone-2.35-git/include -I/home/david/ns-allinone-2.35-git/include -I/usr/include/pcap'
+V_INCLUDES='-I/home/david/ns-allinone-2.35/tclcl-1.20 -I/home/david/ns-allinone-2.35/otcl-1.14 -I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/include -I/usr/include/pcap'
 V_INCLUDE_X11=''
 V_LIB=' -lnsl -ldl'
 V_LIBRARY_TCL='../lib/tcl8.5'
 V_LIBRARY_TK='../lib/tk8.5'
-V_LIBS='-L/home/david/ns-allinone-2.35-git/tclcl-1.20 -ltclcl -L/home/david/ns-allinone-2.35-git/otcl-1.14 -lotcl -L/home/david/ns-allinone-2.35-git/lib -ltk8.5 -L/home/david/ns-allinone-2.35-git/lib -ltcl8.5'
-V_LIB_OTCL='-L/home/david/ns-allinone-2.35-git/otcl-1.14 -lotcl'
-V_LIB_TCL='-L/home/david/ns-allinone-2.35-git/lib -ltcl8.5'
-V_LIB_TCLCL='-L/home/david/ns-allinone-2.35-git/tclcl-1.20 -ltclcl'
-V_LIB_TK='-L/home/david/ns-allinone-2.35-git/lib -ltk8.5'
+V_LIBS='-L/home/david/ns-allinone-2.35/tclcl-1.20 -ltclcl -L/home/david/ns-allinone-2.35/otcl-1.14 -lotcl -L/home/david/ns-allinone-2.35/lib -ltk8.5 -L/home/david/ns-allinone-2.35/lib -ltcl8.5'
+V_LIB_OTCL='-L/home/david/ns-allinone-2.35/otcl-1.14 -lotcl'
+V_LIB_TCL='-L/home/david/ns-allinone-2.35/lib -ltcl8.5'
+V_LIB_TCLCL='-L/home/david/ns-allinone-2.35/tclcl-1.20 -ltclcl'
+V_LIB_TK='-L/home/david/ns-allinone-2.35/lib -ltk8.5'
 V_LIB_X11='-lXext -lX11'
 V_LSSCRIPT=''
 V_NS_TCL_LIB_STL='$(NS_TCL_LIB_STL)'
@@ -2321,7 +2322,7 @@ V_TARCMD='tar cfh'
 V_TAR_EXTRA=''
 V_TAR_TARGET='linux-gnu'
 V_TCL2CPP='../tclcl-1.20/tcl2c++'
-V_TCLSH='/home/david/ns-allinone-2.35-git/bin/tclsh8.5'
+V_TCLSH='/home/david/ns-allinone-2.35/bin/tclsh8.5'
 V_TCL_LIBRARY_FILES='$(TCL_BASE_LIBRARY_FILES) ../lib/tcl8.5/http1.0/http.tcl'
 V_TKDOSNAMES='$(LIBRARY_TK)/optMenu.tcl $(LIBRARY_TK)/scrlbar.tcl'
 ac_ct_CC='gcc-5'

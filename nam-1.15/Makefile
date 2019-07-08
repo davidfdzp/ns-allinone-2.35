@@ -49,17 +49,17 @@ CCOPT =
 MKDEP = ./conf/mkdep
 # Have to be the same as that defined in conf/makefile.win
 TCL2C = ../tclcl-1.20/tcl2c++
-TCLSH = /home/david/ns-allinone-2.35-git/bin/tclsh8.5
+TCLSH = /home/david/ns-allinone-2.35/bin/tclsh8.5
 
 #
 # Remember to add a dependency if you add any tcl sources here.
 #
 LIB =  \
-	-L/home/david/ns-allinone-2.35-git/tclcl-1.20 -ltclcl -L/home/david/ns-allinone-2.35-git/otcl-1.14 -lotcl -L/home/david/ns-allinone-2.35-git/lib -ltk8.5 -L/home/david/ns-allinone-2.35-git/lib -ltcl8.5 -L/home/david/ns-allinone-2.35-git/zlib-1.2.3 -lz \
+	-L/home/david/ns-allinone-2.35/tclcl-1.20 -ltclcl -L/home/david/ns-allinone-2.35/otcl-1.14 -lotcl -L/home/david/ns-allinone-2.35/lib -ltk8.5 -L/home/david/ns-allinone-2.35/lib -ltcl8.5 -L/home/david/ns-allinone-2.35/zlib-1.2.3 -lz \
 	-lXext -lX11 \
 	 -lnsl -ldl -lm 
 INCLUDE = \
-	-I. -I/home/david/ns-allinone-2.35-git/tclcl-1.20 -I/home/david/ns-allinone-2.35-git/otcl-1.14 -I/home/david/ns-allinone-2.35-git/include -I/home/david/ns-allinone-2.35-git/include -I/home/david/ns-allinone-2.35-git/include -I/home/david/ns-allinone-2.35-git/zlib-1.2.3 \
+	-I. -I/home/david/ns-allinone-2.35/tclcl-1.20 -I/home/david/ns-allinone-2.35/otcl-1.14 -I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/zlib-1.2.3 \
 	 
 
 STATIC = 

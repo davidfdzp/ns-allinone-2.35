@@ -27,7 +27,7 @@ uname -v = #648-Microsoft Tue Mar 05 18:57:00 PST 2019
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /home/david/ns-allinone-2.35-git/bin
+PATH: /home/david/ns-allinone-2.35/bin
 PATH: /usr/local/sbin
 PATH: /usr/local/bin
 PATH: /usr/sbin
@@ -634,16 +634,16 @@ V_CCOPT=''
 V_DEFINE=' -DNDEBUG -DUSE_SHM -DHAVE_UNISTD_H=1'
 V_DEFINES='-DHAVE_LIBTK8_5 -DHAVE_TK_H -DHAVE_LIBTCL8_5 -DHAVE_TCLINT_H -DHAVE_TCL_H '
 V_INCLUDE=''
-V_INCLUDES='-I/home/david/ns-allinone-2.35-git/include -I/home/david/ns-allinone-2.35-git/include -I/home/david/ns-allinone-2.35-git/include'
+V_INCLUDES='-I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/include'
 V_INCLUDE_X11=''
 V_LIB=' -lnsl -ldl'
 V_LIBRARY_TCL='../lib/tcl8.5'
 V_LIBRARY_TK='../lib/tk8.5'
-V_LIBS='-L/home/david/ns-allinone-2.35-git/lib -ltk8.5 -L/home/david/ns-allinone-2.35-git/lib -ltcl8.5'
+V_LIBS='-L/home/david/ns-allinone-2.35/lib -ltk8.5 -L/home/david/ns-allinone-2.35/lib -ltcl8.5'
 V_LIB_OTCL=''
-V_LIB_TCL='-L/home/david/ns-allinone-2.35-git/lib -ltcl8.5'
+V_LIB_TCL='-L/home/david/ns-allinone-2.35/lib -ltcl8.5'
 V_LIB_TCLCL=''
-V_LIB_TK='-L/home/david/ns-allinone-2.35-git/lib -ltk8.5'
+V_LIB_TK='-L/home/david/ns-allinone-2.35/lib -ltk8.5'
 V_LIB_X11='-lXext -lX11'
 V_LSSCRIPT=''
 V_NS_TCL_LIB_STL=''
@@ -657,7 +657,7 @@ V_STLOBJ=''
 V_TARCMD='tar cfh'
 V_TAR_EXTRA=''
 V_TAR_TARGET='linux-gnu'
-V_TCLSH='/home/david/ns-allinone-2.35-git/bin/tclsh8.5'
+V_TCLSH='/home/david/ns-allinone-2.35/bin/tclsh8.5'
 V_TCL_LIBRARY_FILES='$(TCL_BASE_LIBRARY_FILES) ../lib/tcl8.5/http1.0/http.tcl'
 V_TKDOSNAMES='$(LIBRARY_TK)/optMenu.tcl $(LIBRARY_TK)/scrlbar.tcl'
 ac_ct_CC='gcc-5'

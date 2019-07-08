@@ -99,13 +99,13 @@ DIST_ARCHIVES = $(distdir).tar.gz
 GZIP_ENV = --best
 distuninstallcheck_listfiles = find . -type f -print
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/david/ns-allinone-2.35-git/dei80211mr-1.1.4/missing --run aclocal-1.10
-AMTAR = ${SHELL} /home/david/ns-allinone-2.35-git/dei80211mr-1.1.4/missing --run tar
+ACLOCAL = ${SHELL} /home/david/ns-allinone-2.35/dei80211mr-1.1.4/missing --run aclocal-1.10
+AMTAR = ${SHELL} /home/david/ns-allinone-2.35/dei80211mr-1.1.4/missing --run tar
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /home/david/ns-allinone-2.35-git/dei80211mr-1.1.4/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/david/ns-allinone-2.35-git/dei80211mr-1.1.4/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/david/ns-allinone-2.35-git/dei80211mr-1.1.4/missing --run automake-1.10
+AUTOCONF = ${SHELL} /home/david/ns-allinone-2.35/dei80211mr-1.1.4/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/david/ns-allinone-2.35/dei80211mr-1.1.4/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/david/ns-allinone-2.35/dei80211mr-1.1.4/missing --run automake-1.10
 AWK = gawk
 CC = gcc-5
 CCDEPMODE = depmode=gcc3
@@ -140,10 +140,10 @@ LIBS =
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LN_S = ln -s
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/david/ns-allinone-2.35-git/dei80211mr-1.1.4/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/david/ns-allinone-2.35/dei80211mr-1.1.4/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
-NS_ALLINONE_DISTCHECK_CONFIGURE_FLAGS = --with-ns-allinone=/home/david/ns-allinone-2.35-git
-NS_CPPFLAGS = -I/home/david/ns-allinone-2.35-git/include -I/home/david/ns-allinone-2.35-git/ns-2.35 -I/home/david/ns-allinone-2.35-git/tclcl-1.20 -I/home/david/ns-allinone-2.35-git/otcl-1.14  -I/home/david/ns-allinone-2.35-git/ns-2.35/mac  -I/home/david/ns-allinone-2.35-git/ns-2.35/propagation  -I/home/david/ns-allinone-2.35-git/ns-2.35/mobile  -I/home/david/ns-allinone-2.35-git/ns-2.35/pcap  -I/home/david/ns-allinone-2.35-git/ns-2.35/tcp  -I/home/david/ns-allinone-2.35-git/ns-2.35/sctp  -I/home/david/ns-allinone-2.35-git/ns-2.35/common  -I/home/david/ns-allinone-2.35-git/ns-2.35/link  -I/home/david/ns-allinone-2.35-git/ns-2.35/queue  -I/home/david/ns-allinone-2.35-git/ns-2.35/trace  -I/home/david/ns-allinone-2.35-git/ns-2.35/adc  -I/home/david/ns-allinone-2.35-git/ns-2.35/apps  -I/home/david/ns-allinone-2.35-git/ns-2.35/routing  -I/home/david/ns-allinone-2.35-git/ns-2.35/tools  -I/home/david/ns-allinone-2.35-git/ns-2.35/classifier  -I/home/david/ns-allinone-2.35-git/ns-2.35/mcast  -I/home/david/ns-allinone-2.35-git/ns-2.35/diffusion3/lib  -I/home/david/ns-allinone-2.35-git/ns-2.35/diffusion3/lib/main  -I/home/david/ns-allinone-2.35-git/ns-2.35/diffusion3/lib/nr  -I/home/david/ns-allinone-2.35-git/ns-2.35/diffusion3/ns  -I/home/david/ns-allinone-2.35-git/ns-2.35/diffusion3/filter_core  -I/home/david/ns-allinone-2.35-git/ns-2.35/asim
+NS_ALLINONE_DISTCHECK_CONFIGURE_FLAGS = --with-ns-allinone=/home/david/ns-allinone-2.35
+NS_CPPFLAGS = -I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/ns-2.35 -I/home/david/ns-allinone-2.35/tclcl-1.20 -I/home/david/ns-allinone-2.35/otcl-1.14  -I/home/david/ns-allinone-2.35/ns-2.35/mac  -I/home/david/ns-allinone-2.35/ns-2.35/propagation  -I/home/david/ns-allinone-2.35/ns-2.35/mobile  -I/home/david/ns-allinone-2.35/ns-2.35/pcap  -I/home/david/ns-allinone-2.35/ns-2.35/tcp  -I/home/david/ns-allinone-2.35/ns-2.35/sctp  -I/home/david/ns-allinone-2.35/ns-2.35/common  -I/home/david/ns-allinone-2.35/ns-2.35/link  -I/home/david/ns-allinone-2.35/ns-2.35/queue  -I/home/david/ns-allinone-2.35/ns-2.35/trace  -I/home/david/ns-allinone-2.35/ns-2.35/adc  -I/home/david/ns-allinone-2.35/ns-2.35/apps  -I/home/david/ns-allinone-2.35/ns-2.35/routing  -I/home/david/ns-allinone-2.35/ns-2.35/tools  -I/home/david/ns-allinone-2.35/ns-2.35/classifier  -I/home/david/ns-allinone-2.35/ns-2.35/mcast  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib/main  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib/nr  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/ns  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/filter_core  -I/home/david/ns-allinone-2.35/ns-2.35/asim
 NS_LDFLAGS = 
 NS_LIBADD = 
 OBJDUMP = objdump
@@ -160,12 +160,12 @@ SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
 STRIP = strip
-TCL2CPP = /home/david/ns-allinone-2.35-git/tclcl-1.20/tcl2c++
+TCL2CPP = /home/david/ns-allinone-2.35/tclcl-1.20/tcl2c++
 VERSION = 1.1.4
-abs_builddir = /home/david/ns-allinone-2.35-git/dei80211mr-1.1.4
-abs_srcdir = /home/david/ns-allinone-2.35-git/dei80211mr-1.1.4
-abs_top_builddir = /home/david/ns-allinone-2.35-git/dei80211mr-1.1.4
-abs_top_srcdir = /home/david/ns-allinone-2.35-git/dei80211mr-1.1.4
+abs_builddir = /home/david/ns-allinone-2.35/dei80211mr-1.1.4
+abs_srcdir = /home/david/ns-allinone-2.35/dei80211mr-1.1.4
+abs_top_builddir = /home/david/ns-allinone-2.35/dei80211mr-1.1.4
+abs_top_srcdir = /home/david/ns-allinone-2.35/dei80211mr-1.1.4
 ac_ct_CC = gcc-5
 ac_ct_CXX = 
 ac_ct_F77 = 
@@ -194,7 +194,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = $(SHELL) /home/david/ns-allinone-2.35-git/dei80211mr-1.1.4/install-sh
+install_sh = $(SHELL) /home/david/ns-allinone-2.35/dei80211mr-1.1.4/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -203,7 +203,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /bin/mkdir -p
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/david/ns-allinone-2.35-git
+prefix = /home/david/ns-allinone-2.35
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
@@ -216,7 +216,7 @@ top_srcdir = .
 SUBDIRS = m4 samples src 
 ACLOCAL_AMFLAGS = -I m4
 EXTRA_DIST = autogen.sh 
-DISTCHECK_CONFIGURE_FLAGS = --with-ns-allinone=/home/david/ns-allinone-2.35-git 
+DISTCHECK_CONFIGURE_FLAGS = --with-ns-allinone=/home/david/ns-allinone-2.35 
 all: all-recursive
 
 .SUFFIXES:
