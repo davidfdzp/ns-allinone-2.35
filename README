@@ -33,15 +33,43 @@ Features in this version include:
 
 - Update for Cygwin-1.7.1 release for Windows
 
-- New features for ns-2.35 release (see the ns-2/CHANGES.html file)
+- New features for ns-2.35 release (see the nmks-2/CHANGES.html file)
 
 3. Installing the package
 --------------------------
+sudo apt install build-essential autoconf automake libxmu-dev xorg-dev
+sudo apt install g++-5
+tar zxfv ns-allinone-2.35.tar.gz 
+cd ns-allinone-2.35/
+vi ns-2.35/linkstate/ls.h
 
-All you need to do is type "./install" under this directory. The install
+  void eraseAll() { erase(baseMap::begin(), baseMap::end()); }
+
+  void eraseAll() { this->erase(baseMap::begin(), baseMap::end()); }
+  
+export CC=gcc-5 CXX=g++-5 && ./install
+                   // if Ubuntu 16.04, the build command is './install' only
+
+git init
+git remote add origin https://github.com/davidfdzp/ns-allinone-2.35.git
+git fetch origin
+git clean -d -fx
+git checkout --track origin/master
+
+Now, all you need to do is type "./install" under this directory. The install
 script will compile and install the whole package for you. The script also
 will tell you the final installation result.
 
+Add paths to .bash_aliases file or .bashrc
+
+NS_HOME=/the/path/to/ns-allinone-2.35
+NSDIR=$NS_HOME/ns-2.35
+PATH=$NS_HOME/bin:$NS_HOME/tcl8.5.10/unix:$NS_HOME/tk8.5.10/unix:$PATH
+LD_LIBRARY_PATH=$NS_HOME/otcl-1.14:$NS_HOME/lib
+TCL_LIBRARY=$NS_HOME/tcl8.5.10/library
+
+cd ns-2.35/
+./validate
 
 4. More information
 --------------------
@@ -54,4 +82,3 @@ or
 -----------------------------
 The nsnam Project
 http://www.nsnam.org
-
