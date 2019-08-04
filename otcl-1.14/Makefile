@@ -4,7 +4,7 @@
 # to your system, but you always can edit the sections below manually.
 #
 
-CC=		gcc-5
+CC=		gcc
 CFLAGS=		-g -O2
 RANLIB= 	ranlib
 INSTALL=	/usr/bin/install -c
@@ -13,7 +13,7 @@ INSTALL=	/usr/bin/install -c
 # how to compile, link, and name shared libraries
 #
 
-SHLIB_LD=	gcc-5 -shared
+SHLIB_LD=	gcc -shared
 SHLIB_CFLAGS=	-fPIC
 SHLIB_SUFFIX=	.so
 SHLD_FLAGS=	-rdynamic
@@ -38,7 +38,7 @@ INST_OINC=	/usr/local/include
 
 INCLUDES = \
 	-I. \
-	-I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/include \
+	-I/home/dfernandezp/ns-allinone-2.35/include -I/home/dfernandezp/ns-allinone-2.35/include -I/home/dfernandezp/ns-allinone-2.35/include \
 	 \
 	-I${prefix}/include \
 	
@@ -46,7 +46,7 @@ INCLUDES = \
 DEFINES = \
 	 -DNDEBUG -DUSE_SHM -DHAVE_UNISTD_H=1
 
-LIB =	-L/home/david/ns-allinone-2.35/lib -ltk8.5 -L/home/david/ns-allinone-2.35/lib -ltcl8.5 \
+LIB =	-L/home/dfernandezp/ns-allinone-2.35/lib -ltk8.5 -L/home/dfernandezp/ns-allinone-2.35/lib -ltcl8.5 \
 	-lXext -lX11  -lnsl -ldl -lm
 
 OTCLLIB= -L. -lotcl

@@ -48,13 +48,13 @@ prefix	= /usr/local
 # Pathname of directory to install the binary
 BINDEST	= /usr/local/bin
 
-CCX = g++-5
-CC = gcc-5
+CCX = g++
+CC = gcc
 MKDEP	= ../../../conf/mkdep
 
 # when including files from ns, we need to take care STL_NAMESPACE
 DEFINE = -Dstand_alone -DSTL_NAMESPACE=@STL_NAMESPACE@ -DCPP_NAMESPACE=std
-CFLAGS =  
+CFLAGS =  -Wall -Wno-write-strings 
 LDFLAGS = 
 LIBS =  -lnsl -ldl -lm -lm 
 INSTALL = /usr/bin/install -c

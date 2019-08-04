@@ -1,82 +1,61 @@
 libdei80211mr_la-wireless-channelpa.lo: wireless-channelpa.cc \
  /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/float.h wireless-channelpa.h \
- /home/david/ns-allinone-2.35/ns-2.35/mac/channel.h /usr/include/string.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/channel.h \
+ /usr/include/string.h /usr/include/features.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/object.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/scheduler.h \
- /home/david/ns-allinone-2.35/ns-2.35/config.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h /usr/include/xlocale.h \
+ /usr/include/x86_64-linux-gnu/bits/string3.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/object.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/scheduler.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/config.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+ /usr/include/x86_64-linux-gnu/bits/sigset.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/select2.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
- /home/david/ns-allinone-2.35/ns-2.35/autoconf.h \
- /home/david/ns-allinone-2.35/tclcl-1.20/tclcl.h \
- /home/david/ns-allinone-2.35/include/tcl.h /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/x86_64-linux-gnu/bits/libio.h \
- /usr/include/x86_64-linux-gnu/bits/_G_config.h \
- /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/autoconf.h \
+ /home/dfernandezp/ns-allinone-2.35/tclcl-1.20/tclcl.h \
+ /home/dfernandezp/ns-allinone-2.35/include/tcl.h /usr/include/stdio.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/david/ns-allinone-2.35/include/tclDecls.h \
- /home/david/ns-allinone-2.35/include/tclPlatDecls.h \
- /home/david/ns-allinone-2.35/otcl-1.14/otcl.h \
- /home/david/ns-allinone-2.35/tclcl-1.20/tclcl-config.h \
- /home/david/ns-allinone-2.35/tclcl-1.20/tracedvar.h \
- /home/david/ns-allinone-2.35/tclcl-1.20/tclcl-mappings.h \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /home/dfernandezp/ns-allinone-2.35/include/tclDecls.h \
+ /home/dfernandezp/ns-allinone-2.35/include/tclPlatDecls.h \
+ /home/dfernandezp/ns-allinone-2.35/otcl-1.14/otcl.h \
+ /home/dfernandezp/ns-allinone-2.35/tclcl-1.20/tclcl-config.h \
+ /home/dfernandezp/ns-allinone-2.35/tclcl-1.20/tracedvar.h \
+ /home/dfernandezp/ns-allinone-2.35/tclcl-1.20/tclcl-mappings.h \
+ /usr/include/strings.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /usr/include/x86_64-linux-gnu/bits/unistd.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/x86_64-linux-gnu/sys/uio.h \
+ /usr/include/x86_64-linux-gnu/bits/uio.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
  /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
@@ -84,83 +63,84 @@ libdei80211mr_la-wireless-channelpa.lo: wireless-channelpa.cc \
  /usr/include/asm-generic/socket.h \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/socket2.h \
  /usr/include/x86_64-linux-gnu/bits/in.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/heap.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/packet.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/heap.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/packet.h \
  /usr/include/assert.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/object.h \
- /home/david/ns-allinone-2.35/ns-2.35/lib/bsd-list.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/packet-stamp.h \
- /home/david/ns-allinone-2.35/ns-2.35/mobile/antenna.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/ns-process.h \
- /home/david/ns-allinone-2.35/ns-2.35/dccp/dccp_packets.h \
- /home/david/ns-allinone-2.35/ns-2.35/dccp/dccp_types.h \
- /home/david/ns-allinone-2.35/ns-2.35/dccp/dccp_opt.h \
- /home/david/ns-allinone-2.35/ns-2.35/mac/phy.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/bi-connector.h \
- /home/david/ns-allinone-2.35/ns-2.35/mac/channel.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/node.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/connector.h \
- /home/david/ns-allinone-2.35/ns-2.35/mac/phy.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/net-interface.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/packet.h \
- /home/david/ns-allinone-2.35/ns-2.35/mobile/energy-model.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/object.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/lib/bsd-list.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/packet-stamp.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile/antenna.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/ns-process.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/dccp/dccp_packets.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/dccp/dccp_types.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/dccp/dccp_opt.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/phy.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/bi-connector.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/channel.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/node.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/connector.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/phy.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/net-interface.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/packet.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile/energy-model.h \
  /usr/include/c++/5/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/5/bits/cpu_defines.h \
- /home/david/ns-allinone-2.35/ns-2.35/trace/trace.h /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/trace/trace.h \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_val.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_valf.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_vall.h \
+ /usr/include/x86_64-linux-gnu/bits/inf.h \
+ /usr/include/x86_64-linux-gnu/bits/nan.h \
+ /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
- /home/david/ns-allinone-2.35/ns-2.35/trace/basetrace.h \
- /home/david/ns-allinone-2.35/ns-2.35/tcp/tcp.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/agent.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/timer-handler.h \
- /home/david/ns-allinone-2.35/ns-2.35/apps/app.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/ns-process.h \
- /home/david/ns-allinone-2.35/ns-2.35/tools/rng.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/location.h \
- /home/david/ns-allinone-2.35/ns-2.35/routing/rtmodule.h \
- /home/david/ns-allinone-2.35/ns-2.35/routing/addr-params.h \
- /home/david/ns-allinone-2.35/ns-2.35/classifier/classifier.h \
- /home/david/ns-allinone-2.35/ns-2.35/classifier/classifier-hash.h \
- /home/david/ns-allinone-2.35/ns-2.35/classifier/classifier.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/ip.h \
- /home/david/ns-allinone-2.35/ns-2.35/classifier/classifier-hier.h \
- /home/david/ns-allinone-2.35/ns-2.35/routing/addr-params.h \
- /home/david/ns-allinone-2.35/ns-2.35/routing/route.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/parentnode.h \
- /home/david/ns-allinone-2.35/ns-2.35/routing/address.h \
- /home/david/ns-allinone-2.35/ns-2.35/classifier/classifier-addr.h \
- /home/david/ns-allinone-2.35/ns-2.35/mac/mac.h \
- /home/david/ns-allinone-2.35/ns-2.35/mac/ll.h \
- /home/david/ns-allinone-2.35/ns-2.35/link/delay.h \
- /home/david/ns-allinone-2.35/ns-2.35/queue/queue.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/connector.h \
- /home/david/ns-allinone-2.35/ns-2.35/mac/arp.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/scheduler.h \
- /home/david/ns-allinone-2.35/ns-2.35/mac/lanRouter.h \
- /home/david/ns-allinone-2.35/ns-2.35/mac/varp.h \
- /home/david/ns-allinone-2.35/ns-2.35/mac/marshall.h wireless-phymr.h \
- /home/david/ns-allinone-2.35/ns-2.35/mac/wireless-phy.h \
- /home/david/ns-allinone-2.35/ns-2.35/mobile/propagation.h \
- /home/david/ns-allinone-2.35/ns-2.35/mobile/topography.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/packet-stamp.h \
- /home/david/ns-allinone-2.35/ns-2.35/mobile/modulation.h \
- /home/david/ns-allinone-2.35/ns-2.35/mobile/omni-antenna.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/mobilenode.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/node.h \
- /home/david/ns-allinone-2.35/ns-2.35/mobile/gridkeeper.h \
- /home/david/ns-allinone-2.35/ns-2.35/common/timer-handler.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/trace/basetrace.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/tcp/tcp.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/agent.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/timer-handler.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/apps/app.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/ns-process.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/tools/rng.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/location.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/routing/rtmodule.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/routing/addr-params.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier/classifier.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier/classifier-hash.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier/classifier.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/ip.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier/classifier-hier.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/routing/addr-params.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/routing/route.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/parentnode.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/routing/address.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier/classifier-addr.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/mac.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/ll.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/link/delay.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/queue/queue.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/connector.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/arp.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/scheduler.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/lanRouter.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/varp.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/marshall.h \
+ wireless-phymr.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/wireless-phy.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile/propagation.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile/topography.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/packet-stamp.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile/modulation.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile/omni-antenna.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/mobilenode.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/node.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile/gridkeeper.h \
+ /home/dfernandezp/ns-allinone-2.35/ns-2.35/common/timer-handler.h \
  power_profile.h deipropagation.h
 
 /usr/include/stdc-predef.h:
@@ -169,11 +149,9 @@ libdei80211mr_la-wireless-channelpa.lo: wireless-channelpa.cc \
 
 wireless-channelpa.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mac/channel.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/channel.h:
 
 /usr/include/string.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/features.h:
 
@@ -181,29 +159,21 @@ wireless-channelpa.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+/usr/include/xlocale.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+/usr/include/x86_64-linux-gnu/bits/string3.h:
 
-/usr/include/strings.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/object.h:
 
-/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/scheduler.h:
 
-/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
-
-/home/david/ns-allinone-2.35/ns-2.35/common/object.h:
-
-/home/david/ns-allinone-2.35/ns-2.35/common/scheduler.h:
-
-/home/david/ns-allinone-2.35/ns-2.35/config.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/config.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -211,15 +181,7 @@ wireless-channelpa.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+/usr/include/time.h:
 
 /usr/include/endian.h:
 
@@ -229,41 +191,25 @@ wireless-channelpa.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
 
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+/usr/include/x86_64-linux-gnu/bits/sigset.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/select2.h:
 
 /usr/include/x86_64-linux-gnu/sys/sysmacros.h:
 
-/usr/include/x86_64-linux-gnu/bits/sysmacros.h:
-
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/alloca.h:
 
@@ -273,23 +219,19 @@ wireless-channelpa.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/autoconf.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/autoconf.h:
 
-/home/david/ns-allinone-2.35/tclcl-1.20/tclcl.h:
+/home/dfernandezp/ns-allinone-2.35/tclcl-1.20/tclcl.h:
 
-/home/david/ns-allinone-2.35/include/tcl.h:
+/home/dfernandezp/ns-allinone-2.35/include/tcl.h:
 
 /usr/include/stdio.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+/usr/include/libio.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+/usr/include/_G_config.h:
 
-/usr/include/x86_64-linux-gnu/bits/libio.h:
-
-/usr/include/x86_64-linux-gnu/bits/_G_config.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+/usr/include/wchar.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h:
 
@@ -301,17 +243,19 @@ wireless-channelpa.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
-/home/david/ns-allinone-2.35/include/tclDecls.h:
+/home/dfernandezp/ns-allinone-2.35/include/tclDecls.h:
 
-/home/david/ns-allinone-2.35/include/tclPlatDecls.h:
+/home/dfernandezp/ns-allinone-2.35/include/tclPlatDecls.h:
 
-/home/david/ns-allinone-2.35/otcl-1.14/otcl.h:
+/home/dfernandezp/ns-allinone-2.35/otcl-1.14/otcl.h:
 
-/home/david/ns-allinone-2.35/tclcl-1.20/tclcl-config.h:
+/home/dfernandezp/ns-allinone-2.35/tclcl-1.20/tclcl-config.h:
 
-/home/david/ns-allinone-2.35/tclcl-1.20/tracedvar.h:
+/home/dfernandezp/ns-allinone-2.35/tclcl-1.20/tracedvar.h:
 
-/home/david/ns-allinone-2.35/tclcl-1.20/tclcl-mappings.h:
+/home/dfernandezp/ns-allinone-2.35/tclcl-1.20/tclcl-mappings.h:
+
+/usr/include/strings.h:
 
 /usr/include/unistd.h:
 
@@ -321,9 +265,7 @@ wireless-channelpa.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+/usr/include/getopt.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd.h:
 
@@ -331,11 +273,17 @@ wireless-channelpa.h:
 
 /usr/include/netinet/in.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/x86_64-linux-gnu/sys/socket.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+/usr/include/x86_64-linux-gnu/sys/uio.h:
+
+/usr/include/x86_64-linux-gnu/bits/uio.h:
 
 /usr/include/x86_64-linux-gnu/bits/socket.h:
 
@@ -351,51 +299,49 @@ wireless-channelpa.h:
 
 /usr/include/asm-generic/sockios.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
-
 /usr/include/x86_64-linux-gnu/bits/socket2.h:
 
 /usr/include/x86_64-linux-gnu/bits/in.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/heap.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/heap.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/packet.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/packet.h:
 
 /usr/include/assert.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/object.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/object.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/lib/bsd-list.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/lib/bsd-list.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/packet-stamp.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/packet-stamp.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mobile/antenna.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile/antenna.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/ns-process.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/ns-process.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/dccp/dccp_packets.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/dccp/dccp_packets.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/dccp/dccp_types.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/dccp/dccp_types.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/dccp/dccp_opt.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/dccp/dccp_opt.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mac/phy.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/phy.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/bi-connector.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/bi-connector.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mac/channel.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/channel.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/node.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/node.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/connector.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/connector.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mac/phy.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/phy.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/net-interface.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/net-interface.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/packet.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/packet.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mobile/energy-model.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile/energy-model.h:
 
 /usr/include/c++/5/cstdlib:
 
@@ -405,7 +351,7 @@ wireless-channelpa.h:
 
 /usr/include/x86_64-linux-gnu/c++/5/bits/cpu_defines.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/trace/trace.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/trace/trace.h:
 
 /usr/include/math.h:
 
@@ -413,101 +359,103 @@ wireless-channelpa.h:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+/usr/include/x86_64-linux-gnu/bits/huge_val.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+/usr/include/x86_64-linux-gnu/bits/huge_valf.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+/usr/include/x86_64-linux-gnu/bits/huge_vall.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+/usr/include/x86_64-linux-gnu/bits/inf.h:
+
+/usr/include/x86_64-linux-gnu/bits/nan.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathdef.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathinline.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/trace/basetrace.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/trace/basetrace.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/tcp/tcp.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/tcp/tcp.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/agent.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/agent.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/timer-handler.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/timer-handler.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/apps/app.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/apps/app.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/ns-process.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/ns-process.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/tools/rng.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/tools/rng.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/location.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/location.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/routing/rtmodule.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/routing/rtmodule.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/routing/addr-params.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/routing/addr-params.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/classifier/classifier.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier/classifier.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/classifier/classifier-hash.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier/classifier-hash.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/classifier/classifier.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier/classifier.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/ip.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/ip.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/classifier/classifier-hier.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier/classifier-hier.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/routing/addr-params.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/routing/addr-params.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/routing/route.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/routing/route.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/parentnode.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/parentnode.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/routing/address.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/routing/address.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/classifier/classifier-addr.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier/classifier-addr.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mac/mac.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/mac.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mac/ll.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/ll.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/link/delay.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/link/delay.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/queue/queue.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/queue/queue.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/connector.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/connector.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mac/arp.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/arp.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/scheduler.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/scheduler.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mac/lanRouter.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/lanRouter.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mac/varp.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/varp.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mac/marshall.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/marshall.h:
 
 wireless-phymr.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mac/wireless-phy.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac/wireless-phy.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mobile/propagation.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile/propagation.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mobile/topography.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile/topography.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/packet-stamp.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/packet-stamp.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mobile/modulation.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile/modulation.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mobile/omni-antenna.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile/omni-antenna.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/mobilenode.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/mobilenode.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/node.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/node.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/mobile/gridkeeper.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile/gridkeeper.h:
 
-/home/david/ns-allinone-2.35/ns-2.35/common/timer-handler.h:
+/home/dfernandezp/ns-allinone-2.35/ns-2.35/common/timer-handler.h:
 
 power_profile.h:
 
