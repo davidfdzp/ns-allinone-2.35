@@ -22,10 +22,10 @@ PATCH_LEVEL		= .10
 # are standard configure substitutions that are based off prefix and
 # exec_prefix.
 
-prefix			= /home/dfernandezp/ns-allinone-2.35
-exec_prefix		= /home/dfernandezp/ns-allinone-2.35
+prefix			= /home/david/ns-allinone-2.35
+exec_prefix		= /home/david/ns-allinone-2.35
 bindir			= ${exec_prefix}/bin
-libdir			= /home/dfernandezp/ns-allinone-2.35/lib
+libdir			= /home/david/ns-allinone-2.35/lib
 includedir		= ${prefix}/include
 datarootdir		= ${prefix}/share
 mandir			= ${datarootdir}/man
@@ -82,7 +82,7 @@ HTML_INSTALL_DIR	= $(INSTALL_ROOT)$(HTML_DIR)
 CONFIG_INSTALL_DIR	= $(INSTALL_ROOT)$(libdir)
 
 # Package search path.
-TCL_PACKAGE_PATH	= /home/dfernandezp/ns-allinone-2.35/lib 
+TCL_PACKAGE_PATH	= /home/david/ns-allinone-2.35/lib 
 
 # Tcl Module default path roots (TIP189).
 TCL_MODULE_PATH		= 
@@ -150,7 +150,7 @@ SHELL			= /bin/sh
 INSTALL_STRIP_PROGRAM   = -s
 INSTALL_STRIP_LIBRARY   = -S -x
 
-INSTALL			= /home/dfernandezp/ns-allinone-2.35/tcl8.5.10/unix/../unix/install-sh -c
+INSTALL			= /home/david/ns-allinone-2.35/tcl8.5.10/unix/../unix/install-sh -c
 INSTALL_PROGRAM		= ${INSTALL}
 INSTALL_LIBRARY		= ${INSTALL}
 INSTALL_DATA		= ${INSTALL} -m 644
@@ -211,11 +211,11 @@ DYLIB_INSTALL_DIR	= ${LIB_RUNTIME_DIR}
 
 COMPAT_OBJS		= 
 
-AC_FLAGS		= -DPACKAGE_NAME=\"tcl\" -DPACKAGE_TARNAME=\"tcl\" -DPACKAGE_VERSION=\"8.5\" -DPACKAGE_STRING=\"tcl\ 8.5\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_LIMITS_H=1 -DHAVE_SYS_PARAM_H=1 -DTCL_CFGVAL_ENCODING=\"iso8859-1\" -DSTATIC_BUILD=1 -DMODULE_SCOPE=extern\ __attribute__\(\(__visibility__\(\"hidden\"\)\)\) -DTCL_SHLIB_EXT=\".so\" -DTCL_CFG_OPTIMIZED=1 -DTCL_CFG_DEBUG=1 -DTCL_TOMMATH=1 -DMP_PREC=4 -D_LARGEFILE64_SOURCE=1 -DTCL_WIDE_INT_IS_LONG=1 -DHAVE_GETCWD=1 -DHAVE_OPENDIR=1 -DHAVE_STRTOL=1 -DHAVE_WAITPID=1 -DHAVE_GETADDRINFO=1 -DUSE_TERMIOS=1 -DHAVE_SYS_TIME_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_GMTIME_R=1 -DHAVE_LOCALTIME_R=1 -DHAVE_MKTIME=1 -DHAVE_TM_GMTOFF=1 -DHAVE_TIMEZONE_VAR=1 -DHAVE_STRUCT_STAT_ST_BLOCKS=1 -DHAVE_STRUCT_STAT_ST_BLKSIZE=1 -DHAVE_BLKCNT_T=1 -DHAVE_INTPTR_T=1 -DHAVE_UINTPTR_T=1 -DHAVE_SIGNED_CHAR=1 -DHAVE_LANGINFO=1 -DHAVE_FTS=1 -DHAVE_SYS_IOCTL_H=1 -DTCL_UNLOAD_DLLS=1
+AC_FLAGS		= -DPACKAGE_NAME=\"tcl\" -DPACKAGE_TARNAME=\"tcl\" -DPACKAGE_VERSION=\"8.5\" -DPACKAGE_STRING=\"tcl\ 8.5\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_LIMITS_H=1 -DHAVE_SYS_PARAM_H=1 -DTCL_CFGVAL_ENCODING=\"iso8859-1\" -DSTATIC_BUILD=1 -DMODULE_SCOPE=extern\ __attribute__\(\(__visibility__\(\"hidden\"\)\)\) -DTCL_SHLIB_EXT=\".so\" -DTCL_CFG_OPTIMIZED=1 -DTCL_CFG_DEBUG=1 -DTCL_TOMMATH=1 -DMP_PREC=4 -D_LARGEFILE64_SOURCE=1 -DTCL_WIDE_INT_IS_LONG=1 -DHAVE_GETCWD=1 -DHAVE_OPENDIR=1 -DHAVE_STRTOL=1 -DHAVE_WAITPID=1 -DHAVE_GETADDRINFO=1 -DUSE_TERMIOS=1 -DHAVE_SYS_TIME_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_GMTIME_R=1 -DHAVE_LOCALTIME_R=1 -DHAVE_MKTIME=1 -DHAVE_TM_GMTOFF=1 -DHAVE_TIMEZONE_VAR=1 -DHAVE_STRUCT_STAT_ST_BLOCKS=1 -DHAVE_STRUCT_STAT_ST_BLKSIZE=1 -DHAVE_BLKCNT_T=1 -DHAVE_INTPTR_T=1 -DHAVE_UINTPTR_T=1 -DNO_UNION_WAIT=1 -DHAVE_SIGNED_CHAR=1 -DHAVE_LANGINFO=1 -DHAVE_FTS=1 -DHAVE_SYS_IOCTL_H=1 -DTCL_UNLOAD_DLLS=1
 AR			= ar
 RANLIB			= ranlib
 DTRACE			= 
-SRC_DIR			= /home/dfernandezp/ns-allinone-2.35/tcl8.5.10/unix
+SRC_DIR			= /home/david/ns-allinone-2.35/tcl8.5.10/unix
 TOP_DIR			= $(SRC_DIR)/..
 BUILD_DIR		= .
 GENERIC_DIR		= $(TOP_DIR)/generic
@@ -225,12 +225,12 @@ TOOL_DIR		= $(TOP_DIR)/tools
 UNIX_DIR		= $(TOP_DIR)/unix
 MAC_OSX_DIR		= $(TOP_DIR)/macosx
 # Must be absolute because of the cd dltest $(DLTEST_DIR)/configure below.
-DLTEST_DIR		= /home/dfernandezp/ns-allinone-2.35/tcl8.5.10/unix/dltest
+DLTEST_DIR		= /home/david/ns-allinone-2.35/tcl8.5.10/unix/dltest
 # Must be absolute to so the corresponding tcltest's tcl_library is absolute.
-TCL_BUILDTIME_LIBRARY	= /home/dfernandezp/ns-allinone-2.35/tcl8.5.10/library
+TCL_BUILDTIME_LIBRARY	= /home/david/ns-allinone-2.35/tcl8.5.10/library
 
-CC			= gcc
-#CC			= purify -best-effort gcc -DPURIFY
+CC			= gcc-5
+#CC			= purify -best-effort gcc-5 -DPURIFY
 
 # Flags to be passed to installManPage to control how the manpages should be
 # installed (symlinks, compression, package name suffix).
@@ -261,7 +261,7 @@ CC_SWITCHES = $(STUB_CC_SWITCHES) ${NO_DEPRECATED_FLAGS}
 
 APP_CC_SWITCHES = $(CC_SWITCHES) 
 
-LIBS		= -ldl  -lieee -lm
+LIBS		= -ldl  -lm
 
 DEPEND_SWITCHES	= ${CFLAGS} -I${UNIX_DIR} -I${GENERIC_DIR} \
 ${AC_FLAGS} ${PROTO_FLAGS} ${EXTRA_CFLAGS} 
@@ -566,7 +566,7 @@ objs: ${OBJS}
 
 
 ${TCL_EXE}: ${TCLSH_OBJS} ${TCL_LIB_FILE}
-	${CC} ${CFLAGS} ${LDFLAGS} ${TCLSH_OBJS} -L/home/dfernandezp/ns-allinone-2.35/tcl8.5.10/unix -ltcl8.5 ${LIBS}  \
+	${CC} ${CFLAGS} ${LDFLAGS} ${TCLSH_OBJS} -L/home/david/ns-allinone-2.35/tcl8.5.10/unix -ltcl8.5 ${LIBS}  \
 		${CC_SEARCH_FLAGS} -o ${TCL_EXE}
 
 # Resetting the LIB_RUNTIME_DIR below is required so that the generated
@@ -578,7 +578,7 @@ tcltest: ${TCLTEST_OBJS} ${TCL_LIB_FILE} ${BUILD_DLTEST}
 	$(MAKE) tcltest-real LIB_RUNTIME_DIR="`pwd`"
 
 tcltest-real:
-	${CC} ${CFLAGS} ${LDFLAGS} ${TCLTEST_OBJS} -L/home/dfernandezp/ns-allinone-2.35/tcl8.5.10/unix -ltcl8.5 ${LIBS}  \
+	${CC} ${CFLAGS} ${LDFLAGS} ${TCLTEST_OBJS} -L/home/david/ns-allinone-2.35/tcl8.5.10/unix -ltcl8.5 ${LIBS}  \
 		${CC_SEARCH_FLAGS} -o tcltest
 
 # Note, in the targets below TCL_LIBRARY needs to be set or else "make test"
@@ -1453,7 +1453,7 @@ $(DTRACE_OBJ): $(DTRACE_SRC) $(TCL_OBJS)
 xttest:  ${XTTEST_OBJS} ${GENERIC_OBJS} ${UNIX_OBJS} ${COMPAT_OBJS} \
 	tclLoadDl.o ${BUILD_DLTEST}
 	${CC} ${XTTEST_OBJS} ${GENERIC_OBJS} ${UNIX_OBJS} ${COMPAT_OBJS} \
-		tclLoadDl.o -L/home/dfernandezp/ns-allinone-2.35/tcl8.5.10/unix -ltcl8.5 ${LIBS} \
+		tclLoadDl.o -L/home/david/ns-allinone-2.35/tcl8.5.10/unix -ltcl8.5 ${LIBS} \
 		${CC_SEARCH_FLAGS} -L/usr/openwin/lib -lXt -o xttest
 
 tclXtNotify.o: $(UNIX_DIR)/tclXtNotify.c

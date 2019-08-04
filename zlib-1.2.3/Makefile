@@ -16,7 +16,7 @@
 # To install in $HOME instead of /usr/local, use:
 #    make install prefix=$HOME
 
-CC=gcc
+CC=gcc-5
 
 CFLAGS=-O3 -DUSE_MMAP
 #CFLAGS=-O -DMAX_WBITS=14 -DMAX_MEM_LEVEL=7
@@ -25,8 +25,8 @@ CFLAGS=-O3 -DUSE_MMAP
 #           -Wstrict-prototypes -Wmissing-prototypes
 
 LDFLAGS=-L. libz.a
-LDSHARED=gcc
-CPP=gcc -E
+LDSHARED=gcc-5
+CPP=gcc-5 -E
 
 LIBS=libz.a
 SHAREDLIB=libz.so

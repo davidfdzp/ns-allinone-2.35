@@ -159,21 +159,21 @@ ETAGS = etags
 CTAGS = ctags
 DIST_SUBDIRS = $(SUBDIRS)
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/dfernandezp/ns-allinone-2.35/dei80211mr-1.1.4/missing --run aclocal-1.10
-AMTAR = ${SHELL} /home/dfernandezp/ns-allinone-2.35/dei80211mr-1.1.4/missing --run tar
+ACLOCAL = ${SHELL} /home/david/ns-allinone-2.35/dei80211mr-1.1.4/missing --run aclocal-1.10
+AMTAR = ${SHELL} /home/david/ns-allinone-2.35/dei80211mr-1.1.4/missing --run tar
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /home/dfernandezp/ns-allinone-2.35/dei80211mr-1.1.4/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/dfernandezp/ns-allinone-2.35/dei80211mr-1.1.4/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/dfernandezp/ns-allinone-2.35/dei80211mr-1.1.4/missing --run automake-1.10
+AUTOCONF = ${SHELL} /home/david/ns-allinone-2.35/dei80211mr-1.1.4/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/david/ns-allinone-2.35/dei80211mr-1.1.4/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/david/ns-allinone-2.35/dei80211mr-1.1.4/missing --run automake-1.10
 AWK = gawk
-CC = gcc
+CC = gcc-5
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2 -Wall -Wno-write-strings -g
-CPP = gcc -E
+CPP = gcc-5 -E
 CPPFLAGS =  -Wall -Wno-write-strings -g
-CXX = g++
-CXXCPP = g++ -E
+CXX = g++-5
+CXXCPP = g++-5 -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O2
 CYGPATH_W = echo
@@ -186,8 +186,8 @@ ECHO_N = -n
 ECHO_T = 
 EGREP = /bin/grep -E
 EXEEXT = 
-F77 = f77
-FFLAGS = -g -O2
+F77 = 
+FFLAGS = 
 GREP = /bin/grep
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
@@ -200,10 +200,10 @@ LIBS =
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LN_S = ln -s
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/dfernandezp/ns-allinone-2.35/dei80211mr-1.1.4/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/david/ns-allinone-2.35/dei80211mr-1.1.4/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
-NS_ALLINONE_DISTCHECK_CONFIGURE_FLAGS = --with-ns-allinone=/home/dfernandezp/ns-allinone-2.35
-NS_CPPFLAGS = -I/home/dfernandezp/ns-allinone-2.35/include -I/home/dfernandezp/ns-allinone-2.35/ns-2.35 -I/home/dfernandezp/ns-allinone-2.35/tclcl-1.20 -I/home/dfernandezp/ns-allinone-2.35/otcl-1.14  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/propagation  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/pcap  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/tcp  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/sctp  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/common  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/link  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/queue  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/trace  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/adc  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/apps  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/routing  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/tools  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mcast  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib/main  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib/nr  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/ns  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/filter_core  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/asim
+NS_ALLINONE_DISTCHECK_CONFIGURE_FLAGS = --with-ns-allinone=/home/david/ns-allinone-2.35
+NS_CPPFLAGS = -I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/ns-2.35 -I/home/david/ns-allinone-2.35/tclcl-1.20 -I/home/david/ns-allinone-2.35/otcl-1.14  -I/home/david/ns-allinone-2.35/ns-2.35/mac  -I/home/david/ns-allinone-2.35/ns-2.35/propagation  -I/home/david/ns-allinone-2.35/ns-2.35/mobile  -I/home/david/ns-allinone-2.35/ns-2.35/pcap  -I/home/david/ns-allinone-2.35/ns-2.35/tcp  -I/home/david/ns-allinone-2.35/ns-2.35/sctp  -I/home/david/ns-allinone-2.35/ns-2.35/common  -I/home/david/ns-allinone-2.35/ns-2.35/link  -I/home/david/ns-allinone-2.35/ns-2.35/queue  -I/home/david/ns-allinone-2.35/ns-2.35/trace  -I/home/david/ns-allinone-2.35/ns-2.35/adc  -I/home/david/ns-allinone-2.35/ns-2.35/apps  -I/home/david/ns-allinone-2.35/ns-2.35/routing  -I/home/david/ns-allinone-2.35/ns-2.35/tools  -I/home/david/ns-allinone-2.35/ns-2.35/classifier  -I/home/david/ns-allinone-2.35/ns-2.35/mcast  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib/main  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib/nr  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/ns  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/filter_core  -I/home/david/ns-allinone-2.35/ns-2.35/asim
 NS_LDFLAGS = 
 NS_LIBADD = 
 OBJDUMP = objdump
@@ -220,15 +220,15 @@ SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
 STRIP = strip
-TCL2CPP = /home/dfernandezp/ns-allinone-2.35/tclcl-1.20/tcl2c++
+TCL2CPP = /home/david/ns-allinone-2.35/tclcl-1.20/tcl2c++
 VERSION = 1.1.4
-abs_builddir = /home/dfernandezp/ns-allinone-2.35/dei80211mr-1.1.4/src
-abs_srcdir = /home/dfernandezp/ns-allinone-2.35/dei80211mr-1.1.4/src
-abs_top_builddir = /home/dfernandezp/ns-allinone-2.35/dei80211mr-1.1.4
-abs_top_srcdir = /home/dfernandezp/ns-allinone-2.35/dei80211mr-1.1.4
-ac_ct_CC = gcc
-ac_ct_CXX = g++
-ac_ct_F77 = f77
+abs_builddir = /home/david/ns-allinone-2.35/dei80211mr-1.1.4/src
+abs_srcdir = /home/david/ns-allinone-2.35/dei80211mr-1.1.4/src
+abs_top_builddir = /home/david/ns-allinone-2.35/dei80211mr-1.1.4
+abs_top_srcdir = /home/david/ns-allinone-2.35/dei80211mr-1.1.4
+ac_ct_CC = gcc-5
+ac_ct_CXX = 
+ac_ct_F77 = 
 am__include = include
 am__leading_dot = .
 am__quote = 
@@ -254,7 +254,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = $(SHELL) /home/dfernandezp/ns-allinone-2.35/dei80211mr-1.1.4/install-sh
+install_sh = $(SHELL) /home/david/ns-allinone-2.35/dei80211mr-1.1.4/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -263,7 +263,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /bin/mkdir -p
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/dfernandezp/ns-allinone-2.35
+prefix = /home/david/ns-allinone-2.35
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
@@ -298,7 +298,7 @@ libdei80211mr_la_SOURCES = mac-802_11mr.cc mac-802_11mr.h \
 			ra-snr.cc ra-snr.h \
 			rbar.h rbar.cc
 
-libdei80211mr_la_CPPFLAGS = -I/home/dfernandezp/ns-allinone-2.35/include -I/home/dfernandezp/ns-allinone-2.35/ns-2.35 -I/home/dfernandezp/ns-allinone-2.35/tclcl-1.20 -I/home/dfernandezp/ns-allinone-2.35/otcl-1.14  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/propagation  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/pcap  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/tcp  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/sctp  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/common  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/link  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/queue  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/trace  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/adc  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/apps  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/routing  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/tools  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mcast  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib/main  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib/nr  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/ns  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/filter_core  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/asim -I$(srcdir)/adt
+libdei80211mr_la_CPPFLAGS = -I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/ns-2.35 -I/home/david/ns-allinone-2.35/tclcl-1.20 -I/home/david/ns-allinone-2.35/otcl-1.14  -I/home/david/ns-allinone-2.35/ns-2.35/mac  -I/home/david/ns-allinone-2.35/ns-2.35/propagation  -I/home/david/ns-allinone-2.35/ns-2.35/mobile  -I/home/david/ns-allinone-2.35/ns-2.35/pcap  -I/home/david/ns-allinone-2.35/ns-2.35/tcp  -I/home/david/ns-allinone-2.35/ns-2.35/sctp  -I/home/david/ns-allinone-2.35/ns-2.35/common  -I/home/david/ns-allinone-2.35/ns-2.35/link  -I/home/david/ns-allinone-2.35/ns-2.35/queue  -I/home/david/ns-allinone-2.35/ns-2.35/trace  -I/home/david/ns-allinone-2.35/ns-2.35/adc  -I/home/david/ns-allinone-2.35/ns-2.35/apps  -I/home/david/ns-allinone-2.35/ns-2.35/routing  -I/home/david/ns-allinone-2.35/ns-2.35/tools  -I/home/david/ns-allinone-2.35/ns-2.35/classifier  -I/home/david/ns-allinone-2.35/ns-2.35/mcast  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib/main  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib/nr  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/ns  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/filter_core  -I/home/david/ns-allinone-2.35/ns-2.35/asim -I$(srcdir)/adt
 libdei80211mr_la_LDFLAGS =  
 libdei80211mr_la_LIBADD =  
 nodist_libdei80211mr_la_SOURCES = InitTcl.cc 
@@ -309,7 +309,7 @@ TCL_FILES = multirate-defaults.tcl \
 	per_table_80211b_intersil_HFA3861B.tcl
 
 test_power_profile_SOURCES = power_profile.cc power_profile.h test_power_profile.cc
-test_power_profile_CPPFLAGS = -I/home/dfernandezp/ns-allinone-2.35/include -I/home/dfernandezp/ns-allinone-2.35/ns-2.35 -I/home/dfernandezp/ns-allinone-2.35/tclcl-1.20 -I/home/dfernandezp/ns-allinone-2.35/otcl-1.14  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/propagation  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/pcap  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/tcp  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/sctp  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/common  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/link  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/queue  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/trace  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/adc  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/apps  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/routing  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/tools  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mcast  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib/main  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib/nr  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/ns  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/filter_core  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/asim -I$(srcdir)/adt -DCOMPILING_TEST_PROGRAM
+test_power_profile_CPPFLAGS = -I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/ns-2.35 -I/home/david/ns-allinone-2.35/tclcl-1.20 -I/home/david/ns-allinone-2.35/otcl-1.14  -I/home/david/ns-allinone-2.35/ns-2.35/mac  -I/home/david/ns-allinone-2.35/ns-2.35/propagation  -I/home/david/ns-allinone-2.35/ns-2.35/mobile  -I/home/david/ns-allinone-2.35/ns-2.35/pcap  -I/home/david/ns-allinone-2.35/ns-2.35/tcp  -I/home/david/ns-allinone-2.35/ns-2.35/sctp  -I/home/david/ns-allinone-2.35/ns-2.35/common  -I/home/david/ns-allinone-2.35/ns-2.35/link  -I/home/david/ns-allinone-2.35/ns-2.35/queue  -I/home/david/ns-allinone-2.35/ns-2.35/trace  -I/home/david/ns-allinone-2.35/ns-2.35/adc  -I/home/david/ns-allinone-2.35/ns-2.35/apps  -I/home/david/ns-allinone-2.35/ns-2.35/routing  -I/home/david/ns-allinone-2.35/ns-2.35/tools  -I/home/david/ns-allinone-2.35/ns-2.35/classifier  -I/home/david/ns-allinone-2.35/ns-2.35/mcast  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib/main  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib/nr  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/ns  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/filter_core  -I/home/david/ns-allinone-2.35/ns-2.35/asim -I$(srcdir)/adt -DCOMPILING_TEST_PROGRAM
 test_power_profile_LDFLAGS = -Wl,--warn-unresolved-symbols
 test_per_SOURCES = test_PER.cc \
 		adt/Position.h  adt/Position.cc  \
@@ -319,7 +319,7 @@ test_per_SOURCES = test_PER.cc \
 		PER.cc PER.h \
 		power_profile.cc power_profile.h
 
-test_per_CPPFLAGS = -I/home/dfernandezp/ns-allinone-2.35/include -I/home/dfernandezp/ns-allinone-2.35/ns-2.35 -I/home/dfernandezp/ns-allinone-2.35/tclcl-1.20 -I/home/dfernandezp/ns-allinone-2.35/otcl-1.14  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mac  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/propagation  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mobile  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/pcap  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/tcp  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/sctp  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/common  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/link  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/queue  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/trace  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/adc  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/apps  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/routing  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/tools  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/classifier  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/mcast  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib/main  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/lib/nr  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/ns  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/diffusion3/filter_core  -I/home/dfernandezp/ns-allinone-2.35/ns-2.35/asim -I$(srcdir)/adt -DCOMPILING_TEST_PROGRAM
+test_per_CPPFLAGS = -I/home/david/ns-allinone-2.35/include -I/home/david/ns-allinone-2.35/ns-2.35 -I/home/david/ns-allinone-2.35/tclcl-1.20 -I/home/david/ns-allinone-2.35/otcl-1.14  -I/home/david/ns-allinone-2.35/ns-2.35/mac  -I/home/david/ns-allinone-2.35/ns-2.35/propagation  -I/home/david/ns-allinone-2.35/ns-2.35/mobile  -I/home/david/ns-allinone-2.35/ns-2.35/pcap  -I/home/david/ns-allinone-2.35/ns-2.35/tcp  -I/home/david/ns-allinone-2.35/ns-2.35/sctp  -I/home/david/ns-allinone-2.35/ns-2.35/common  -I/home/david/ns-allinone-2.35/ns-2.35/link  -I/home/david/ns-allinone-2.35/ns-2.35/queue  -I/home/david/ns-allinone-2.35/ns-2.35/trace  -I/home/david/ns-allinone-2.35/ns-2.35/adc  -I/home/david/ns-allinone-2.35/ns-2.35/apps  -I/home/david/ns-allinone-2.35/ns-2.35/routing  -I/home/david/ns-allinone-2.35/ns-2.35/tools  -I/home/david/ns-allinone-2.35/ns-2.35/classifier  -I/home/david/ns-allinone-2.35/ns-2.35/mcast  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib/main  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/lib/nr  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/ns  -I/home/david/ns-allinone-2.35/ns-2.35/diffusion3/filter_core  -I/home/david/ns-allinone-2.35/ns-2.35/asim -I$(srcdir)/adt -DCOMPILING_TEST_PROGRAM
 test_per_LDFLAGS = -Wl,--warn-unresolved-symbols
 EXTRA_DIST = $(TCL_FILES)
 all: $(BUILT_SOURCES)
@@ -1134,7 +1134,7 @@ uninstall-am: uninstall-libLTLIBRARIES
 
 
 InitTcl.cc: Makefile $(TCL_FILES)
-		cat $(TCL_FILES) | /home/dfernandezp/ns-allinone-2.35/tclcl-1.20/tcl2c++ InitTclCode > InitTcl.cc
+		cat $(TCL_FILES) | /home/david/ns-allinone-2.35/tclcl-1.20/tcl2c++ InitTclCode > InitTcl.cc
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
