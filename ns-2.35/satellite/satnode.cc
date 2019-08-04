@@ -190,31 +190,62 @@ void SatNode::dumpSats()
 	PolarSatPosition *polar_sposp;
 	SatLinkHead *slhp;
 	int linktype;
+	char filename[BUFSIZ];
+	FILE *pf;
 
-        printf("\nDumping satellites at time %.2f\n\n", NOW);
+	snprintf(filename,BUFSIZ,"satsdump%d.txt", (int)(NOW*1000));
+	if((pf=fopen(filename,"w"))==NULL){
+		printf("Error opening file %s\n", filename);
+	}
+	if(pf){
+	        fprintf(pf,"\nDumping satellites at time %.2f\n\n", NOW);
+	}else{
+		printf("\nDumping satellites at time %.2f\n\n", NOW);
+	}
         for (snodep= (SatNode*) Node::nodehead_.lh_first; snodep; 
 		snodep = (SatNode*) snodep->nextnode()) {
 		if (!SatNode::IsASatNode(snodep->address()))
 			continue;
 		sposp = snodep->position();
-                printf("%d\t%.2f\t%.2f", snodep->address(), 
+                if(pf){
+		   fprintf(pf, "%d\t%.2f\t%.2f", snodep->address(), 
 		    RAD_TO_DEG(SatGeometry::get_latitude(sposp->coord())), 
 		    RAD_TO_DEG(SatGeometry::get_longitude(sposp->coord())));
+		}else{
+		    printf("%d\t%.2f\t%.2f", snodep->address(), 
+		    RAD_TO_DEG(SatGeometry::get_latitude(sposp->coord())), 
+		    RAD_TO_DEG(SatGeometry::get_longitude(sposp->coord())));
+		}
 		// If SatNode is polar, append plane information
 		if (sposp->type()==POSITION_SAT_POLAR) {
 			polar_sposp = (PolarSatPosition*) snodep->position();
-			printf ("\t%d", polar_sposp->plane());
+			if(pf){
+				fprintf (pf,"\t%d", polar_sposp->plane());
+			}else{
+				printf ("\t%d", polar_sposp->plane());
+			}
 		} else if (sposp->type()==POSITION_SAT_GEO) {
-			printf ("\tGEO");
+			if(pf){
+				fprintf (pf,"\tGEO");
+			}else{
+				printf ("\tGEO");
+			}
 		} else if (sposp->type()==POSITION_SAT_TERM) {
-			printf ("\tTERM");
+			if(pf){
+				fprintf (pf, "\tTERM");
+			}else{
+				printf ("\tTERM");
+			}
 		}
-		printf("\n");
+		if(pf) fprintf(pf, "\n");
+		else printf("\n");
 	}
-        printf("\n");
+	if(pf) fprintf(pf, "\n");
+	else printf("\n");
         // Dump satellite links
         // There is a static list of address classifiers //QQQ
-        printf("Links:\n");
+        if(pf) fprintf(pf, "Links:\n");
+	else printf("Links:\n");
         for (snodep = (SatNode*) Node::nodehead_.lh_first; snodep; 
 		snodep = (SatNode*) snodep->nextnode()) {
 		if (!SatNode::IsASatNode(snodep->address()))
@@ -235,13 +266,25 @@ void SatNode::dumpSats()
 				continue; // this link interface is not attached
 			// need something in here for txs.
 			peer_sposp = peer_snodep->position();
-                        printf("%.2f\t%.2f\t%.2f\t%.2f\t%d\n", 
-			 RAD_TO_DEG(SatGeometry::get_latitude(sposp->coord())),
-			 RAD_TO_DEG(SatGeometry::get_longitude(sposp->coord())),
-			 RAD_TO_DEG(SatGeometry::get_latitude(peer_sposp->coord())), 
-			 RAD_TO_DEG(SatGeometry::get_longitude(peer_sposp->coord())),
-			 linktype);
+			if(pf){
+				 fprintf(pf, "%.2f\t%.2f\t%.2f\t%.2f\t%d\n", 
+				 RAD_TO_DEG(SatGeometry::get_latitude(sposp->coord())),
+				 RAD_TO_DEG(SatGeometry::get_longitude(sposp->coord())),
+				 RAD_TO_DEG(SatGeometry::get_latitude(peer_sposp->coord())), 
+				 RAD_TO_DEG(SatGeometry::get_longitude(peer_sposp->coord())),
+				 linktype);
+			}else{
+		                printf("%.2f\t%.2f\t%.2f\t%.2f\t%d\n", 
+				 RAD_TO_DEG(SatGeometry::get_latitude(sposp->coord())),
+				 RAD_TO_DEG(SatGeometry::get_longitude(sposp->coord())),
+				 RAD_TO_DEG(SatGeometry::get_latitude(peer_sposp->coord())), 
+				 RAD_TO_DEG(SatGeometry::get_longitude(peer_sposp->coord())),
+				 linktype);
+			}
 		}
 	}
-	printf("\nDumped satellites at time %.2f\n\n", NOW);
+	if (pf) fprintf(pf, "\nDumped satellites at time %.2f\n\n", NOW);
+	else printf("\nDumped satellites at time %.2f\n\n", NOW);
+	if(pf) fclose(pf);
 }
+

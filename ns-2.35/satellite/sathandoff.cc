@@ -148,8 +148,9 @@ SatLinkHead* LinkHandoffMgr::get_peer_linkhead(SatLinkHead* slhp)
 		return 0;
 	}
 	if (remote_phy_->nextchnl()) {
-		printf("Error:  This ISL channel has more than one target\n");
-		return 0;
+		// printf("Error:  This ISL channel has more than one target\n");
+		printf("Warning:  This ISL channel has more than one target\n");
+		// return 0;
 	}
 	return ( (SatLinkHead*) remote_phy_->head());
 }

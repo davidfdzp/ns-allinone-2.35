@@ -82,6 +82,8 @@ class TrafficGenerator : public Application {
 public:
 	TrafficGenerator();
 	virtual double next_interval(int &) = 0;
+	virtual double next_interval(int &, int &);
+	virtual double next_interval(int &, int &, int &, uint64_t&);
 	virtual void init() {}
 	virtual double interval() { return 0; }
 	virtual int on() { return 0; }

@@ -45,6 +45,17 @@ TrafficGenerator::TrafficGenerator() : nextPkttime_(-1), running_(0), timer_(thi
 {
 }
 
+double TrafficGenerator::next_interval(int &, int &, int &, uint64_t&){
+	fprintf(stderr,
+		"TrafficGenerator::next_interval(int, int, int, uint64_t) not implemented\n");
+		abort();
+}
+
+double TrafficGenerator::next_interval(int &, int &){
+	fprintf(stderr,
+		"TrafficGenerator::next_interval(int, int) not implemented\n");
+		abort();
+}
 
 void TrafficGenerator::start()
 {
